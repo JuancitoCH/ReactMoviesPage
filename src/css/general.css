@@ -1,0 +1,66 @@
+.dark{
+    --main-back-color:#B0A990;
+    --home-back-color: #39304A;
+    --home-font-color: #B0A990;
+    --movie-back-color:#AF3B6E;
+}
+.light{
+    --main-back-color:#E7DAE3;
+    --home-back-color: #D33F49;
+    --home-font-color: #E0E0E0;
+    --movie-back-color:#77BA99;
+}
+:root{
+    --main-back-color:#E7DAE3;
+    --home-back-color: #D33F49;
+    --home-font-color: #262730;
+    --movie-back-color:#77BA99;
+}
+
+body{
+    background-color: var(--main-back-color);
+}
+.home{
+    background-color: var(--home-back-color);
+    color: var( --home-font-color);
+}
+.home h1{
+    color: var(--main-back-color);
+}
+
+.movie{
+    background-color: var( --movie-back-color);
+    
+
+    padding: 10px;
+    margin: 10px;
+    width: 50% ;
+    /* height: 400px; */
+    overflow: hidden;
+    box-shadow: 5px 4px 4px  rgba(26,27,30,.5 ) ;
+    
+}
+
+.movies{
+    display: flex;
+    margin: 5px;
+    
+}
+.movie_Link{
+    text-decoration: none;
+    color:var(--main-back-color) ;
+    transition: color ease .5s;
+}
+.movie_Link:hover{
+    color: var(--home-back-color);
+}
+.movie_div_image{
+    display: block;
+    width: 100%;
+}
+.movie_img{
+    display: block;
+    width: 80%;
+    height: 80%;
+    padding-bottom: 20px;
+}
