@@ -10,15 +10,21 @@
     --home-font-color: #E0E0E0;
     --movie-back-color:#77BA99;
 }
-:root{
-    --main-back-color:#E7DAE3;
+/* :root{
+    /* --main-back-color:#E7DAE3;
     --home-back-color: #D33F49;
     --home-font-color: #262730;
-    --movie-back-color:#77BA99;
+    --movie-back-color:#77BA99; 
+ } */
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: var(--main-back-color);
+    
 }
 .home{
     background-color: var(--home-back-color);
@@ -30,15 +36,11 @@ body{
 
 .movie{
     background-color: var( --movie-back-color);
-    
-
     padding: 10px;
     margin: 10px;
-    width: 50% ;
-    /* height: 400px; */
+    width: 50%;
     overflow: hidden;
     box-shadow: 5px 4px 4px  rgba(26,27,30,.5 ) ;
-    
 }
 
 .movies{
@@ -50,17 +52,41 @@ body{
     text-decoration: none;
     color:var(--main-back-color) ;
     transition: color ease .5s;
+    
 }
 .movie_Link:hover{
     color: var(--home-back-color);
 }
-.movie_div_image{
+.movie_div{
     display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.movie_div_image{
     width: 100%;
 }
-.movie_img{
-    display: block;
-    width: 80%;
-    height: 80%;
-    padding-bottom: 20px;
+.movie_details{
+    background-color: var(--home-back-color);
+    color: var( --home-font-color);
+    padding: 20px;
+}
+.BotonPerron{
+    background-color: var(--home-back-color);
+    color: var( --home-font-color);
+    border: var( --home-font-color) solid 2px;
+    border-radius: 2px;
+    font-size: 1rem ;
+    padding:2px 5px;
+    width: 4rem;
+}
+.movie_estrellitas{
+    font-size: 1.5rem;
+}
+.comments__listaComentarios{
+    border: var(--movie-back-color) solid 5px;
+}
+.comments__listaComentarios div{
+   border-bottom: var(--movie-back-color) solid .5px;
+    margin: 3px;
 }
