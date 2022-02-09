@@ -26,11 +26,11 @@ export default function Comments({comentarios,idMovie}) {
       <p className='comments_p'>Comentarios</p>
       <div className='comments_divComments'>
           <div className='comments_divComments_team'>
-             <img src="/UserProfileSvg.svg" className='comments_divComments_img' alt="" />
-             <input onKeyDown={tecla} ref={inputComentario} type='text' className='comments_divComments_input' placeholder="Comment something..."></input>
+          <img src="/UserProfileSvg.svg" className='comments_divComments_img' alt="" />
+          <input onKeyDown={tecla} ref={inputComentario} type='text' className='comments_divComments_input' placeholder="Comment something..."></input>
           </div>
           <div className='comments_espacioBlanco'></div>
-        <button onClick={comentar} className='comments_divComments_button'>comentar</button>
+          <button onClick={comentar} className='comments_divComments_button'>comentar</button>
       </div>
       <ListarComentarios comentarios={comentarios} />
   </div>;
