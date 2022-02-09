@@ -83,10 +83,3 @@ body{
 .movie_estrellitas{
     font-size: 1.5rem;
 }
-.comments__listaComentarios{
-    border: var(--movie-back-color) solid 5px;
-}
-.comments__listaComentarios div{
-   border-bottom: var(--movie-back-color) solid .5px;
-    margin: 3px;
-}

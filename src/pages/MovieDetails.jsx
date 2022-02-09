@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { listMovies } from '../context/ListMovies';
 import Movie from '../components/Movie'
-import Comments from '../components/Comments'
+import Comments from '../components/Comments/Comments'
 import {contextTema} from '../context/Temas'
 import TemaButton from '../components/TemaButton';
 
