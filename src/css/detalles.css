@@ -1,0 +1,34 @@
+
+.contenedor {
+    margin-left: 5vw;
+    margin-top: 10vh;
+    display: inline-block;
+}
+
+.imagen {
+    float: left;
+    margin-right: 2vw;
+}
+
+.imagen__img {
+    height: 45vh;
+    width: 200px;
+    border-radius: 5%;
+}
+
+div span {
+    padding-right: 2vw;
+}
+
+.titulo {
+    margin: 2px;
+}
+
+.titulo__nombre {
+    color: white;
+}
+
+
+.espacio {
+    margin-top: 5vh;
+}
