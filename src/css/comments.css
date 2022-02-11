@@ -12,7 +12,7 @@
 }
 .comments{
     /* cambiando el porcentaje acomodamos los comentarios enteros */
-    width: 60%;
+    width: 80%;
     padding: 2px;
 }
 .comments_p{
@@ -60,6 +60,8 @@
     border-radius: 5px;
     padding: 3px 8px;
     margin-bottom: 10px;
+    /* width: 10%;
+    height: 30%; */
     font-size: 100%;
 }
 .comments_divComments_listaComentarios{
