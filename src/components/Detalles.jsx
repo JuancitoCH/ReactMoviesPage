@@ -37,8 +37,8 @@ export default function Detalles({ movie }) {
                     </div>
 
                     <div className='participantes'>
-                        <p className='participantes__p'>Director: {movie.title}</p>
-                        <p className='participantes__p'>Actores: {movie.title}</p>
+                        <p className='participantes__p'>Director: {movie.director}</p>
+                        <p className='participantes__p'>Actores: {movie.actores}</p>
                     </div>
 
                 </div>

@@ -26,9 +26,24 @@ div span {
 
 .titulo__nombre {
     color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
+.ranking {
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    margin-bottom: 20px;
+    margin-right: 10vw;
+}
+
+.participantes__p {
+    margin-bottom: 10px;
+}
 
 .espacio {
     margin-top: 5vh;
 }
+

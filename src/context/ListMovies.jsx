@@ -10,6 +10,8 @@ export default function ListMovies({children}) {
         descripcion:"Peter Parker decide irse junto a Michelle Jones, Ned y el resto de sus amigos a pasar unas vacaciones a Europa después de los eventos ocurridos en Vengadores: EndGame. Sin embargo, el plan de Parker por dejar de lado sus superpoderes durante unas semanas se ven truncados cuándo es reclutado por Nick Fury para unirse a Mysterio",
         poster:"https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/12/spider-man-no-way-home-poster-2551731.jpg?itok=xe1AtQWW",
         comentarios:["Mejor Peli del Año","Quiero ser Spiderman"],
+        director: "James Wan",
+        actores: "Peter Parker, Meriyein, Doc Octopus",
         trailer: "https://www.youtube.com/embed/6QkTCmhOzuA",
     },{
         id:'2',
@@ -19,6 +21,8 @@ export default function ListMovies({children}) {
         descripcion:"Batman regresa para continuar su guerra contra el crimen. Con la ayuda del teniente Jim Gordon y el Fiscal del Distrito Harvey Dent, Batman tiene como objetivo destruir el crimen organizado en la ciudad de Gotham. El triunvirato demuestra ser eficaz, pero pronto termina siendo presa del caos desencadenado por una nueva mente criminal que los aterrados ciudadanos conocen como Joker.",
         poster:"https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2020/09/poster-batman-2021-2064381.jpg?itok=SEuYP8hx",
         comentarios:["No veo la hora de que se estrene","Im Batman"],
+        director: "Steven Spielberg",
+        actores: "El de crepúsculo, Alfredo, Gatúbela nueva",
         trailer:"https://www.youtube.com/embed/fWQrd6cwJ0A"
         
     },{
