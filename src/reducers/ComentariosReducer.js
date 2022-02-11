@@ -24,15 +24,20 @@ const ComentariosReducer =(state,action)=>{
             const {payloads} = action
             state.map(movie=>{
                 if(payloads.idMovie === movie.id){
-                    console.log("pasoporAqui")
+                   
                     movie.comentarios.push(payloads.comentario) 
+                    console.log(movie)
                 }
                 return movie
             })
-            return [...state]
-        default:
-            return state
-    }
-
+            // console.log(state)
+            // return [...state]
+            break
+            default:
+                return state
+            }
+            
+        console.log(state)
+     return [...state]
 }
 export {ComentariosReducer,mokup}

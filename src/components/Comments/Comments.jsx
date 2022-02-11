@@ -17,7 +17,7 @@ export default function Comments({idMovie}) {
           <input  ref={inputComentario} type='text' className='comments_divComments_input' placeholder="Comment something..."></input>
           </div>
           <div className='comments_espacioBlanco'></div>
-          {console.log(movies)}
+          
           <button onClick={()=>{addReview({type:"addComentario",payloads:{idMovie,comentario:inputComentario.current.value}});inputComentario.current.value=""}} className='comments_divComments_button'>comentar</button>
       </div>
       <ListarComentarios idMovie={idMovie} />
