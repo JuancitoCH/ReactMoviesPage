@@ -12,10 +12,13 @@
     /* border: white solid 3px; */
 }
 .Header_Logo{
+    position: absolute;
     width: 10%;
-    
+    top:2%;
+    left: .5%;
 }
 .Header_divBotonBusqueda{
+    padding: 7% 0px 10px 0px;
     display: flex;
     justify-content: center;
 }
@@ -55,12 +58,26 @@
     background-color: var(--background_Header);
     color: white;
     border-radius: 11px;
+    transition: background-color ease .5s;
 }
 .Header_RegisterButton{
+    background-color: var(--background_Header);
+    color: white;
+
     padding: 10px;
     font-size: 1rem;
     border: none;
     border-radius: 11px;
+    transition: background-color ease .3s;
+
+}
+.Header_LoginButton:hover{
+    background-color: white;
+    color: black;
+}
+.Header_RegisterButton:hover{
+    background-color: white;
+    color: black;
 }
 .Header_EspacioBlanco{
     height: 30px;
