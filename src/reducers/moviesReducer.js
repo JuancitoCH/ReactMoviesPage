@@ -1,6 +1,6 @@
 
 
-export const initialState = {
+export const moviesInitialState = {
     movies: mockup
 }
 
@@ -19,4 +19,5 @@ export default function moviesReducer (state, action) {
     return newState
 
 }
-
+ 
+//TAREA: Hacer lo del rating con un useReducer

@@ -36,6 +36,11 @@ export default function Detalles({ movie }) {
                         <p className='descripcion__p'>{movie.descripcion}</p>
                     </div>
 
+                    <div className='participantes'>
+                        <p className='participantes__p'>Director: {movie.title}</p>
+                        <p className='participantes__p'>Actores: {movie.title}</p>
+                    </div>
+
                 </div>
                 {/*Este div de abajo sirve para separar los detalles del trailer*/}
                 <div className='espacio'></div>
