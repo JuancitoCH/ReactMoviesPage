@@ -1,16 +1,28 @@
-//export const reviewsInitialState () {
-
-//}
-
-export default function moviesReducer (state, action) {
-    let newState;
-    switch (action.type) {
-        case 'addReview':
-            const {idMovie, comment} = action;
-            newState = [...state, {id:state.revies.length.idMovie}];
-            break;
+const reviews = {
+    reviews:[{
+        idMovie:'1',
+        comentarios:["Mejor Peli del Año","Quiero ser Spiderman"],
+    },
+    {
+        idMovie:'2',
+        comentarios:["No veo la hora de que se estrene","Im Batman"],
+    },
+    {
+        idMovie:'3',
+        comentarios:[],
     }
-    
-    return newState
-
+]
 }
+const reducerReviews=(state,action)=>{
+    switch(action.type){
+        case "addReview":
+            break
+
+
+
+        default:
+            break
+        }
+    return {...state}
+}
+export  {reducerReviews,reviews}
