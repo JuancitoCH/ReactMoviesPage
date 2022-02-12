@@ -7,6 +7,7 @@ import Comments from '../components/Comments/Comments'
 import {contextTema} from '../context/Temas'
 import TemaButton from '../components/TemaButton';
 import Trailer from '../components/Trailer';
+import Similares from '../components/Similares';
 
 export default function MovieDetails() {
     
@@ -19,5 +20,6 @@ export default function MovieDetails() {
         <Detalles key={movie.id} movie={movie}></Detalles>
         <Trailer key={movie.id} movie={movie}></Trailer>
         <Comments comentarios={movie.comentarios} idMovie = {movie.id}/>
+        <Similares movie={movies}/>
     </div>;
 }
