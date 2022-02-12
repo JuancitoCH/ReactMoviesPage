@@ -8,10 +8,10 @@ export default function Movies() {
   // movies es la coleccion de pelis en el objeto moviesState
   const {moviesState:{movies}} = useContext(moviesContext)
   return (
-      <div className='Movies'>
+      <section className='movies'>
         {movies.map(eachMovie=>{
         return <CardMovie movie={eachMovie} key={uniqid()} />
         })}
-      </div>
+      </section>
   )
 }

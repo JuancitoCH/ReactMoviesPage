@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import '../css/detalles.css'
+import '../../css/detalles.css'
 
 export default function Detalles({ movie }) {
 
@@ -23,7 +23,7 @@ export default function Detalles({ movie }) {
                         <img className='imagen__img' alt={movie.title} src={movie.poster} />
                     </div>
                     <header className='titulo'>
-                        <Link className='titulo__Link' to={'/movies/' + movie.id}>
+                        <Link className='titulo__Link' to={'/movie/' + movie.id}>
                             <h2 className='titulo__nombre'>{movie.title + ' (' + movie.año + ')'}</h2>
                         </Link>
                     </header>

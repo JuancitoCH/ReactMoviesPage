@@ -17,7 +17,7 @@ export default function CardMovie({movie}) {
                 <p className='card__stars'>🔅🔅🔅🔅🔅</p>
                 {/* Esto lo vamos a cambiar cuando tengamos el addReview listo */}
                 <p>Calificación: 4,5</p>
-                <Link className='link' to={'/movies/' + movie.id}>{movie.title}</Link>
+                <Link className='link' to={'/movie/' + movie.id}>{movie.title}</Link>
             </div>
         </article>
 
