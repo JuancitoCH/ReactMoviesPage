@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Trailer ({movie}) {
     return (
-        <iframe 
+        <iframe
             width="560" 
             height="315" 
             src={movie.trailer}

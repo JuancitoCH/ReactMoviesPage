@@ -17,8 +17,8 @@ export default function MovieDetails() {
     const {tema} = useContext(contextTema)
     return <div className={`movie_details ${tema}`}>
         <TemaButton/>
-        <Detalles key={movie.id} movie={movie}></Detalles>
-        <Trailer key={movie.id} movie={movie}></Trailer>
+        <Detalles  movie={movie}></Detalles>
+        <Trailer  movie={movie}></Trailer>
         <Comments comentarios={movie.comentarios} idMovie = {movie.id}/>
         <Similares movie={movies}/>
     </div>;
