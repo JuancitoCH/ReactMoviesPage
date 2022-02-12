@@ -7,9 +7,9 @@ export default function Trailer ({movie}) {
             height="315" 
             src={movie.trailer}
             title="YouTube video player" 
-            frameborder="0" 
+            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+            allowFullScreen>
         </iframe>
     );
 }
