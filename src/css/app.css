@@ -19,4 +19,5 @@ body {
     background: #222;
     /* Esto permite que las card se ordenen si se achica la pantalla */
     flex-wrap: wrap;
+    /* background-color: white; */
 }

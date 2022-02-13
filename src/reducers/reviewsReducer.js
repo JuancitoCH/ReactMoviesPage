@@ -14,9 +14,18 @@ const reviews = {
 ]
 }
 const reducerReviews=(state,action)=>{
+    //mi useReducer debe ser puro y no mutar los valores como es el caso de esta verga
     switch(action.type){
         case "addReview":
-            break
+            const {newReview,idMovie} = action.payloads
+            state.reviews.map(eachReview=>{
+                if(eachReview.idMovie === idMovie) {
+                    eachReview.comentarios.push(newReview)
+                    console.log(eachReview.comentarios)
+                }
+                return eachReview            
+            })
+            break;
 
 
 

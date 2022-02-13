@@ -6,6 +6,7 @@ import { reducerReviews, reviews } from '../reducers/reviewsReducer'
 export const moviesContext = createContext()
 
 export default function MoviesContext({children}){
+  //creacion de los reducers
   const [moviesState,dispatchMovies] = useReducer(reducerMovies,movies)
   const [reviewsState,dispatchReviews] = useReducer(reducerReviews,reviews)
 
@@ -13,7 +14,7 @@ export default function MoviesContext({children}){
     
   }
   const addNewReview =(dataNewReview)=>{
-
+    dispatchReviews(dataNewReview)
   }
   const getMovieById=(idMovie)=>{
     const movieToReturn = moviesState.movies.filter(eachMovie=> eachMovie.id === idMovie )
@@ -21,8 +22,8 @@ export default function MoviesContext({children}){
     return movieToReturn[0]
   }
   const getReviewsById=(idMovie)=>{
-    const reviewToReturn = reviewsState.reviews.filter(eachReview=> eachReview.idMovie === idMovie )
-    console.log(reviewToReturn.comentarios)
+    const reviewToReturn = reviewsState.reviews.filter(eachReview=> eachReview.idMovie === idMovie)[0]
+    // console.log(reviewToReturn)
     return reviewToReturn.comentarios
   }
   const contextValues = {
@@ -31,7 +32,8 @@ export default function MoviesContext({children}){
     getMovieById,
     getReviewsById,
     dispatchMovies,
-    dispatchReviews
+    dispatchReviews,
+    addNewReview
   }
   return (
       <moviesContext.Provider value={contextValues}>

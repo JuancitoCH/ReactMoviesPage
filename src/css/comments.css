@@ -10,7 +10,7 @@
     --background_Comentarios:rgba(33, 33, 33, 0.4);
 
 }
-.comments{
+.comments dark{
     /* cambiando el porcentaje acomodamos los comentarios enteros */
     width: 80%;
     padding: 2px;
