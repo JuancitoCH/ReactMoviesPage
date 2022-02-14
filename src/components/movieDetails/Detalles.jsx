@@ -13,32 +13,32 @@ export default function Detalles({ movie }) {
     
 
     const addReview */
-
+    console.log(movie)
     return (
         <> {/*Armo un fragment para poner el último div*/}
             <div className='principal'>
                 <div className='contenedor'> {/*Toda la clase contenedor está en modo inline-block*/}
 
                     <div className='imagen'>
-                        <img className='imagen__img' alt={movie.title} src={movie.poster} />
+                        <img className='imagen__img' alt={movie.Title} src={movie.Poster} />
                     </div>
                     <header className='titulo'>
-                        <Link className='titulo__Link' to={'/movie/' + movie.id}>
-                            <h2 className='titulo__nombre'>{movie.title + ' (' + movie.año + ')'}</h2>
+                        <Link className='titulo__Link' to={'/movie/' + movie._id}>
+                            <h2 className='titulo__nombre'>{movie.Title + ' (' + 22 + ')'}</h2>
                         </Link>
                     </header>
                     <div className='ranking'>
                         <span className='detalles__estrellitas'>🔅🔅🔅🔅🔅</span>
-                        <span>{movie.duracion}</span>
+                        {/* <span>{movie.duracion}</span> */}
                     </div>
 
                     <div className='descripcion'>
-                        <p className='descripcion__p'>{movie.descripcion}</p>
+                        <p className='descripcion__p'>{movie.Sinopsis}</p>
                     </div>
 
                     <div className='participantes'>
-                        <p className='participantes__p'>Director: {movie.director}</p>
-                        <p className='participantes__p'>Actores: {movie.actores}</p>
+                        {/* <p className='participantes__p'>Director: {movie.director}</p> */}
+                        {/* <p className='participantes__p'>Actores: {movie.Cast}</p> */}
                     </div>
 
                 </div>

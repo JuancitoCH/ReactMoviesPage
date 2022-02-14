@@ -5,7 +5,7 @@ export default function Trailer ({movie}) {
         <iframe
             width="560" 
             height="315" 
-            src={movie.trailer}
+            src={movie.Trailer}
             title="YouTube video player" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

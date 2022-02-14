@@ -42,7 +42,8 @@ const reducerMovies=(state,action)=>{
 
 
         default:
-            break
+            // console.log([...action.payloads.Movies])
+            return {movies:[...action.payloads.Movies]}
         }
     return {...state}
 }

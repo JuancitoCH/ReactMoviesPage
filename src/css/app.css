@@ -8,16 +8,16 @@
     font-family: sans-serif;
 }
 
-body {
-    display: flex;
-    /* Para poner en el medio */
-    align-items: center;
-    /* Lo mismo */
-    justify-content: center;
-    /* No recuerdo si ya vimos View-height y v-width en clase pero siempre los uso porque me parecen mÃ¡s divertidos */
-    min-height: 100vh;
-    background: #222;
-    /* Esto permite que las card se ordenen si se achica la pantalla */
-    flex-wrap: wrap;
-    /* background-color: white; */
+
+.dark{
+    --main-back-color:#B0A990;
+    --home-back-color: #39304A;
+    --home-font-color: #B0A990;
+    --movie-back-color:#AF3B6E;
+}
+.light{
+    --main-back-color:#E7DAE3;
+    --home-back-color: #D33F49;
+    --home-font-color: #E0E0E0;
+    --movie-back-color:#77BA99;
 }
