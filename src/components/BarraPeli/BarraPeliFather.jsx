@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import BarraPeli from './BarraPeli'
-export default function BarraPeliFather({movie:movies}) {
+import { moviesContext } from "../../context/MoviesContext";
+import uniqid from "uniqid";
+export default function BarraPeliFather() {
+  const {moviesState:{movies}} = useContext(moviesContext);
   return (
-    <div>
-        {
-            movies.map((movie)=><BarraPeli key={movie.id} img={movie.poster} titulo={movie.title} description={movie.description}/>)
-        }
-        
-    </div>
-  )
+    <section className='BarraPelis'>
+      {movies.map((movie) => (
+        <BarraPeli
+          key={uniqid()}
+          img={movie.Banner}
+          titulo={movie.Title}
+          description={movie.Sinopsis}
+        />
+      ))}
+    </section>
+  );
 }
