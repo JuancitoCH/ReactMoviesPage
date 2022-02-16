@@ -5,14 +5,12 @@ import '../../css/detalles.css'
 export default function Detalles({ movie }) {
 
 
-    /*const add = () => {
-        let comment = comentario.current.value;
-        let starts = rating.current.value;
-        addReview(movie, starts, comment);
+    function sacarAño (dato) {
+        let año = "";
+        año = dato;
+        return año.substring(0,4);
     }
-    
 
-    const addReview */
     console.log(movie)
     return (
         <> {/*Armo un fragment para poner el último div*/}
@@ -24,12 +22,11 @@ export default function Detalles({ movie }) {
                     </div>
                     <header className='titulo'>
                         <Link className='titulo__Link' to={'/movie/' + movie._id}>
-                            <h2 className='titulo__nombre'>{movie.Title + ' (' + movie.Realease + ')'}</h2>
+                            <h2 className='titulo__nombre'>{movie.Title + ' (' + 2021 + ')'}</h2>
                         </Link>
                     </header>
                     <div className='ranking'>
                         <span className='detalles__estrellitas'>🔅🔅🔅🔅🔅</span>
-                        {/* <span>{movie.duracion}</span> */}
                     </div>
 
                     <div className='descripcion'>
@@ -37,8 +34,8 @@ export default function Detalles({ movie }) {
                     </div>
 
                     <div className='participantes'>
-                        {/* <p className='participantes__p'>Director: {movie.director}</p> */}
-                        {/* <p className='participantes__p'>Actores: {movie.Cast}</p> */}
+                        <p className='participantes__p'>Género: {movie.Genere}</p> 
+                        <p className='participantes__p'>Actores: {movie.Cast}</p>
                     </div>
 
                 </div>
