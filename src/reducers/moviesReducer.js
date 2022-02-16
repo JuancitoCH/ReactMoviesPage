@@ -43,7 +43,8 @@ const reducerMovies=(state,action)=>{
 
         default:
             // console.log([...action.payloads.Movies])
-            return {movies:[...action.payloads.Movies]}
+            const movies = action.payloads.movies
+            return {movies:action.payloads.movies}
         }
     return {...state}
 }

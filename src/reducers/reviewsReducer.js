@@ -21,6 +21,9 @@ const reducerReviews=(state,action)=>{
             const {newState} = action
             return {...newState}
 
+
+
+            
         case "addReviewReducer":
             const {newReview,idMovie} = action.payloads
             state.reviews.map(eachReview=>{
@@ -30,6 +33,8 @@ const reducerReviews=(state,action)=>{
                 return eachReview            
             })
             return {...state}
+
+
 
         default:
             return {...state}

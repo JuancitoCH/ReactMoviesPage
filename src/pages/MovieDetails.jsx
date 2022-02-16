@@ -5,7 +5,6 @@ import Detalles from '../components/movieDetails/Detalles'
 import Comments from '../components/Comments/Comments'
 
 
-
 export default async function MovieDetails() {
     
     const {getMovieById} = useContext(moviesContext)
@@ -13,10 +12,11 @@ export default async function MovieDetails() {
     const {id:idMovie} = useParams()
     // hacemos uzo de una funcion definida en el contexto
     const movie = await getMovieById(idMovie)
-    
+
   return (
     <section className='app_home_movieDetails_section'>
-        <Detalles movie={movie} />
+        
+        {/* <Detalles movie={movie} /> */}
         {/* <Comments idMovie={idMovie}/> */}
     </section>
   )
