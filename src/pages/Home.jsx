@@ -1,21 +1,15 @@
 import React from 'react';
-import Movies from '../components/Movies';
-import {useContext} from 'react'
-import { listMovies } from '../context/ListMovies';
-import TemaButton from '../components/TemaButton';
-import {contextTema} from '../context/Temas'
-import Header from '../components/Header/Header'
-import BarraPeliFather from '../components/BarraPeli/BarraPeliFather';
+import Movies from '../components/Movies/Movies'
+import Slide from '../components/Slide/Slide';
+import Header from '../components/Header/Header';
+import '../css/home.css'
 
 export default function Home() {
-    const {tema} = useContext(contextTema)
-    const {movies} = useContext(listMovies)
-  return <div className={`home ${tema}`}>
+  return <div className="home">
       <Header/>
+      <div className='Home_EspacioBlanco_Header_Slide'></div>
+      <Slide/>
+      <Movies/>
       
-      <h1>Movies</h1>
-      <TemaButton/>
-      <Movies movie={movies}/>
-      <BarraPeliFather movie={movies}/>
   </div>;
 }

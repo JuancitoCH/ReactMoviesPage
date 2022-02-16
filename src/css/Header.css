@@ -7,15 +7,20 @@
     --background_input:white;
 }
 .Header{
-    position: relative;
+    top: 0;
+    position: absolute;
+    width: 100%;
     background-color: var(--background_Header);
+    z-index: 1000;
     /* border: white solid 3px; */
 }
 .Header_Logo{
     position: absolute;
     width: 10%;
-    top:2%;
+    height: 60%;
+    top:10%;
     left: .5%;
+    color: white;
 }
 .Header_divBotonBusqueda{
     padding: 7% 0px 10px 0px;

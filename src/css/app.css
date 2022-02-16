@@ -1,0 +1,25 @@
+* {
+    /* Primero reseteo todo */
+    margin: 0;
+    padding: 0;
+    /* Hago que el contenido llegue hasta los bordes */
+    box-sizing: border-box;
+    /* Me gusta el sans-serif */
+    font-family: sans-serif;
+}
+body{
+    background-color: #39304A;
+}
+
+.dark{
+    --main-back-color:#B0A990;
+    --home-back-color: #39304A;
+    --home-font-color: #B0A990;
+    --movie-back-color:#AF3B6E;
+}
+.light{
+    --main-back-color:#E7DAE3;
+    --home-back-color: #D33F49;
+    --home-font-color: #E0E0E0;
+    --movie-back-color:#77BA99;
+}

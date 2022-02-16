@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import TemasContext from './context/Temas'
-import ListMovies  from './context/ListMovies';
+import MoviesContext from './context/MoviesContext';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <TemasContext>
-      <ListMovies>
+    <MoviesContext>
       <App />
-      </ListMovies>
-    </TemasContext>
+    </MoviesContext>
   </React.StrictMode>,
   document.getElementById('root')
 );

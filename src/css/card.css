@@ -1,0 +1,99 @@
+body {
+    /* display: flex; */
+    /* Para poner en el medio */
+    align-items: center;
+    /* Lo mismo */
+    justify-content: center;
+    /* No recuerdo si ya vimos View-height y v-width en clase pero siempre los uso porque me parecen mÃ¡s divertidos */
+    min-height: 100vh;
+    background: #39304A;
+    /* Esto permite que las card se ordenen si se achica la pantalla */
+    flex-wrap: wrap;
+    /* background-color: white; */
+}
+.card {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .cara {
+    position:absolute;
+    /* AcÃ¡ hago que ocupe todo el espacio que defino en card */
+    width: 100%;
+    height: 100%;
+    /* Esta cosa la usaba uno en Instagram y dije "Messirve" */
+    backface-visibility: hidden;
+    /* AcÃ¡ redondeo los bordes */
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ajusto la velocidad a la que cambia el estado para darle un delay a la animaciÃ³n */
+    transition: 0.5s;
+}
+
+.card .frente{
+    /* AcÃ¡ le digo en quÃ© estado de giro comienza, este en 0 por ser el frente*/
+    transform: perspective(600px) rotateY(0deg);
+    /* Le agrego sombrita a la card */
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .cara img {
+    /*Con esto hago que la imagen se acomode dentro del recorte de card*/
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .frente h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: black;
+    /* La cuarta propiedad me permite modificar la transparencia */
+    background: rgba(0, 0, 0, .7);
+    text-align: center;
+}
+
+.card .atras {
+    transform: perspective(600px) rotateY(180deg);
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .atras .link {
+    border-top: solid 2px #fff;
+    height: 50px;
+    line-height: 50px ;
+    margin-bottom: 10px;
+}
+
+.card .atras .link a {
+    color: #fff;
+}
+
+.card .atras .link h3 {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.card:hover .frente {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .atras {
+    transform: perspective(600px) rotateY(360deg);
+}
