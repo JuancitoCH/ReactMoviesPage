@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/trailer.css'
 
 export default function Trailer ({Trailer}) {
     return (
