@@ -7,7 +7,9 @@
     /* Me gusta el sans-serif */
     font-family: sans-serif;
 }
-
+body{
+    background-color: #39304A;
+}
 
 .dark{
     --main-back-color:#B0A990;

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../../css/card.css';
 
 export default function CardMovie({movie}) {
+    // console.log(movie)
     return (
         <article className='card'>
             {/* Creo un artículo que será cada card */}

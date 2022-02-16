@@ -5,7 +5,8 @@ import '../../css/comments.css'
 
 
 
-export default function Comments({idMovie}) {
+export default function Comments({idMovie,Comentarios}) {
+    console.log(Comentarios)
     const {addNewReview} = useContext(moviesContext)
     const inputComentario = useRef(null)
   return <div className='comments dark'>
@@ -18,6 +19,6 @@ export default function Comments({idMovie}) {
           <div className='comments_espacioBlanco'></div>
           <button onClick={()=>{addNewReview({type:"addReviewReducer",payloads:{idMovie,newReview:inputComentario.current.value}});inputComentario.current.value=""}} className='comments_divComments_button'>comentar</button>
       </div>
-      <ListarComentarios idMovie={idMovie} />
+      <ListarComentarios idMovie={idMovie} Comentarios={Comentarios} />
   </div>;
 }

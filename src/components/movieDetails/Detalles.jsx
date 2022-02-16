@@ -24,7 +24,7 @@ export default function Detalles({ movie }) {
                     </div>
                     <header className='titulo'>
                         <Link className='titulo__Link' to={'/movie/' + movie._id}>
-                            <h2 className='titulo__nombre'>{movie.Title + ' (' + 22 + ')'}</h2>
+                            <h2 className='titulo__nombre'>{movie.Title + ' (' + movie.Realease + ')'}</h2>
                         </Link>
                     </header>
                     <div className='ranking'>

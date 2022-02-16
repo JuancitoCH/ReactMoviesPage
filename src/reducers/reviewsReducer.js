@@ -1,14 +1,14 @@
 const reviews = {
     reviews:[{
-        idMovie:'1',
+        idMovie:'61fb5801b7e1043bee600500',
         comentarios:["Mejor Peli del Año","Quiero ser Spiderman"],
     },
     {
-        idMovie:'2',
+        idMovie:'61fb5e4d9866dba5ef9a98b2',
         comentarios:["No veo la hora de que se estrene","Im Batman"],
     },
     {
-        idMovie:'3',
+        idMovie:'6205e0deda4da8b645ac605d',
         comentarios:[],
     }
 ]
