@@ -7,11 +7,12 @@ export default function BarraPeliFather() {
   return (
     <section className='BarraPelis'>
       {movies.map((movie) => (
-        <BarraPeli
+        <BarraPeli 
           key={uniqid()}
           img={movie.Banner}
           titulo={movie.Title}
           description={movie.Sinopsis}
+          id={movie._id}
         />
       ))}
     </section>
