@@ -1,0 +1,18 @@
+.Footer{
+    position: relative;
+    bottom: 0px;
+    display: block;
+    background-color: #F5F5F5;
+    height: 180px;
+    text-align: center;
+}
+.Footer_p{
+    font-size: 1rem;
+    
+}
+.Footer_icons{
+    height: 70px;
+    width: 60px;
+    margin-top: 30px;
+    padding: 0;
+}

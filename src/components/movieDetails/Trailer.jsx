@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Trailer ({Trailer}) {
     return (
+        <div className='Block_Trailer'>
+        <p>Ver Trailer</p>
         <iframe
             width="560" 
             height="315" 
@@ -11,5 +13,6 @@ export default function Trailer ({Trailer}) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen>
         </iframe>
+        </div>
     );
 }

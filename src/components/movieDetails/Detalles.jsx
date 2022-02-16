@@ -10,9 +10,10 @@ export default function Detalles({ movie }) {
         let starts = rating.current.value;
         addReview(movie, starts, comment);
     }
-    
-
     const addReview */
+
+
+    
     console.log(movie)
     return (
         <> {/*Armo un fragment para poner el último div*/}

@@ -6,7 +6,6 @@ import '../../css/comments.css'
 
 
 export default function Comments({idMovie,Comentarios}) {
-    console.log(Comentarios)
     const {addNewReview} = useContext(moviesContext)
     const inputComentario = useRef(null)
   return <div className='comments dark'>

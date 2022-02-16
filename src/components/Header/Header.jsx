@@ -1,8 +1,10 @@
 import React from 'react'
 import '../../css/Header.css'
 import { BiCameraMovie } from 'react-icons/bi';
+// import {useHistory} from 'react-router-dom'
 // BiCameraMovie
 export default function Header() {
+
   return (
     <div className='Header dark'>
         <div className='Header_botones_div'>
@@ -10,7 +12,8 @@ export default function Header() {
         <button className='Header_RegisterButton'>Register</button>
         </div>
         {/* <img src="/peliculaIcono.svg" className='Header_Logo' alt="LogoHeader" /> */}
-        <BiCameraMovie className='Header_Logo'/>
+        
+        <BiCameraMovie className='Header_Logo' />
         <div className='Header_divBotonBusqueda'>
             <input type="text" className='Header_divBotonBusqueda_barraBusqueda'/>
             <button className='Header_divBotonBusqueda_button'><img src="/lupaicon.svg" className='Header_divBotonBusqueda_button_img' alt="" /></button>

@@ -7,7 +7,7 @@ export const moviesContext = createContext()
 
 export default function MoviesContext({children}){
   //creacion de los reducers
-  const [moviesState,dispatchMovies] = useReducer(reducerMovies,{movies:[{Title:"",Poster:"http://franciscoamk.com/wp-content/uploads/2019/11/Rectangulo-1-2.png"}]})
+  const [moviesState,dispatchMovies] = useReducer(reducerMovies,{movies:[{Title:"",Poster:"http://franciscoamk.com/wp-content/uploads/2019/11/Rectangulo-1-2.png",Realease:[],Cast:[],Genere:[]}]})
   const [reviewsState,dispatchReviews] = useReducer(reducerReviews,reviews)
   
   useEffect(()=>{

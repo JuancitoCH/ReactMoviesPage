@@ -21,6 +21,11 @@
     top:10%;
     left: .5%;
     color: white;
+    transition: color ease .4s;
+}
+.Header_Logo:hover{
+    color: grey;
+    cursor: pointer;
 }
 .Header_divBotonBusqueda{
     padding: 7% 0px 10px 0px;
@@ -47,6 +52,8 @@
 }
 .Header_divBotonBusqueda_button:hover{
     background-color: grey;
+    cursor: pointer;
+    
 }
 .Header_divBotonBusqueda_button_img{
     height: 50%;
@@ -79,10 +86,12 @@
 .Header_LoginButton:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 .Header_RegisterButton:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 .Header_EspacioBlanco{
     height: 30px;

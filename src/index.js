@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MoviesContext from './context/MoviesContext';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <MoviesContext>
+      <Header/>
       <App />
+      <Footer/>
     </MoviesContext>
   </React.StrictMode>,
   document.getElementById('root')

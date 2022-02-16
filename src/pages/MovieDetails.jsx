@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 import Detalles from '../components/movieDetails/Detalles'
 import Comments from '../components/Comments/Comments'
 import Trailer from '../components/movieDetails/Trailer'
-
+import '../css/MovieDetails.css'
 export default function MovieDetails() {
     
     const [movie,setMovie] = useState({})
@@ -21,10 +21,12 @@ export default function MovieDetails() {
     },[])
 
 
-
+    // console.log(movie)
     
   return (
     <section className='app_home_movieDetails_section'>
+        <div className='Fondo'></div>
+        <div className='Espacio_Header'></div>
         
         <Detalles movie={movie} />
         <Trailer Trailer={movie.Trailer}/>

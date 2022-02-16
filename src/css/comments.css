@@ -1,3 +1,4 @@
+
 .dark{
     --color_Comentario:#D2CECE;
     --color_Comentarios:#FFFFFF;
@@ -10,10 +11,11 @@
     --background_Comentarios:rgba(33, 33, 33, 0.4);
 
 }
-.comments dark{
+.comments {
     /* cambiando el porcentaje acomodamos los comentarios enteros */
     width: 80%;
     padding: 2px;
+    margin: 0 20px;
 }
 .comments_p{
     font-size: 1.3rem;
