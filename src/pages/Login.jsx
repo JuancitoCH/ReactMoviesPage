@@ -12,21 +12,22 @@ export default function Login() {
 
         //registro: "https://backendtzuzulcode.wl.r.appspot.com/auth/signup"
         //Datos para el registro: firstName,lastName,birthday,city,email,password
-        /* fetch("https://backendtzuzulcode.wl.r.appspot.com/auth/login",{
+        fetch("https://moiviesapi.rj.r.appspot.com/user/login",{
             method:"POST",
             credentials:'include',
             headers:{
                 "Content-Type":"application/json"
             },
             body:JSON.stringify({
-                email:email.value,
-                password:password.value
+                Email:email.value,
+                Password:password.value
             })
         }).then(res=>res.json())
         .then(user=>{
             console.log(user)
-            setUser({logged:true,name:user.data.firstName})
-        }).catch(error=>setUser({logged:false})) */
+            // setUser({logged:true,name:user.data.firstName})
+        }).catch(error=>console.log(error)) 
+        // }).catch(error=>setUser({logged:false})) 
     }
   return (
     <div className='Login'>

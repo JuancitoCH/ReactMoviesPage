@@ -15,7 +15,7 @@
     /* cambiando el porcentaje acomodamos los comentarios enteros */
     width: 80%;
     padding: 2px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
 }
 .comments_p{
     font-size: 1.3rem;
