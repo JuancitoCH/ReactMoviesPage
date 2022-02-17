@@ -21,7 +21,7 @@ export default function MovieDetails() {
         setComentarios(movieDetails.Comentarios)
       })
     },[])
-
+    // console.log(comentarios)
 
     // console.log(movie)
     

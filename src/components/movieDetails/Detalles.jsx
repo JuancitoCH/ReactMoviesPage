@@ -9,7 +9,7 @@ export default function Detalles({ movie }) {
         año = dato;
         return año.substring(0,4);
     }
-    console.log(movie)
+    // console.log(movie)
     return (
         <> {/*Armo un fragment para poner el último div*/}
         

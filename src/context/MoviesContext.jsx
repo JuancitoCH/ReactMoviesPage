@@ -16,9 +16,23 @@ export default function MoviesContext({children}){
     .then(moviesApi=>dispatchMovies({payloads:{movies:moviesApi}}))
   },[])
   
-  const addNewReview =(dataNewReview)=>{
-    dispatchReviews(dataNewReview)
-  }
+  const addNewReview =(dataNewReview,idMovie)=>{
+    fetch(`https://moiviesapi.rj.r.appspot.com/movies/${idMovie}/comentar`,{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      credentials:'include',
+      body:JSON.stringify({
+        Comentario:{
+          Comentario:dataNewReview.Comentario,
+          Raiting:dataNewReview.Raiting
+        }
+      })
+    })
+    .then(res=>res.json())
+    .then(res=>console.log(res))
+}
   
   const addNewMovie=(dataNewMovie)=>{
     

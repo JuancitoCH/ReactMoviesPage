@@ -78,6 +78,7 @@
 }
 .comments_divComments_listaComentarios_unComentario{
     display: flex;
+    position: relative;
     background-color: var(--background_Comentarios);
     margin: 5px;
     padding: 10px;
@@ -93,4 +94,9 @@
     display: flex;
     margin: 5px;
     padding: 10px;
+}
+.comments_divComments_listaComentarios_unComentario_Email{
+    font-size: .8rem;
+    position: absolute;
+    right: 10px;
 }
