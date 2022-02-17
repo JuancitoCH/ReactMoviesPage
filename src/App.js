@@ -4,10 +4,11 @@ import MovieDetails from './pages/MovieDetails';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import './css/app.css'
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -16,6 +17,8 @@ function App() {
         <Route path='/register' element={<Register/>}/>
       </Routes>
     </BrowserRouter>
+    <Footer/>
+    </>
   );
 }
 

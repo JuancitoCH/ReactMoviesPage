@@ -1,12 +1,9 @@
 import React from 'react'
 import '../../css/Header.css'
 import { BiCameraMovie } from 'react-icons/bi';
-<<<<<<< HEAD
 // import {useHistory} from 'react-router-dom'
-=======
-import { Link } from "react-router-dom";
->>>>>>> Ivan2
 // BiCameraMovie
+import {Link} from 'react-router-dom'
 export default function Header() {
 
   return (
