@@ -35,6 +35,6 @@ export default function Comments({idMovie,Comentarios}) {
       }
            className='comments_divComments_button'>Comentar</button>
       </div>
-      <ListarComentarios idMovie={idMovie} Comentarios={Comentarios} />
+      {/*<ListarComentarios idMovie={idMovie} Comentarios={Comentarios} />*/}
   </div>;
 }
