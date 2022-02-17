@@ -20,9 +20,7 @@ export default function Detalles({ movie }) {
                         <img className='imagen__img' alt={movie.Title} src={movie.Poster} />
                     </div>
                     <header className='titulo'>
-                        <Link className='titulo__Link' to={'/movie/' + movie._id}>
-                            <h2 className='titulo__nombre'>{movie.Title + ' (' + 2021 + ')'}</h2>
-                        </Link>
+                        <h2 className='titulo__nombre'>{movie.Title + ' (' + 2021 + ')'}</h2>
                     </header>
                     <div className='ranking'>
                         <span className='detalles__estrellitas'>🔅🔅🔅🔅🔅</span>
