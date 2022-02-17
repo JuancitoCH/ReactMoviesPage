@@ -34,7 +34,7 @@ export default function MovieDetails() {
         
         <Detalles movie={movie} />
         <Trailer Trailer={movie.Trailer}/>
-        <Comments idMovie={idMovie} Comentarios = {comentarios}/>
+        <Comments idMovie={idMovie} Comentarios = {comentarios} />
     </section>
     </>
   )

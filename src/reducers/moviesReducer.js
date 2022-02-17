@@ -36,16 +36,15 @@ const movies = {
 }
 const reducerMovies=(state,action)=>{
     switch(action.type){
-        case "addMovie":
-            break
+        case "armarMovie":
+            
+           return {movies:action.payloads.movies}
+            
 
 
 
         default:
-            // console.log([...action.payloads.Movies])
-            const movies = action.payloads.movies
-            return {movies:action.payloads.movies}
+            return {...state}
         }
-    return {...state}
 }
 export  {reducerMovies,movies}

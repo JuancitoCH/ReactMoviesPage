@@ -16,10 +16,13 @@ export default function Comments({idMovie,Comentarios}) {
             <input  ref={inputComentario} type='text' className='comments_divComments_input' placeholder="Deja un comentario"></input>
           </div>
           <div className='comments_espacioBlanco'></div>
-          <button onClick={()=>{addNewReview({
+          <button onClick={()=>{
+            addNewReview({
             Comentario:inputComentario.current.value
           , Raiting:1
-        },idMovie)}}
+          },idMovie)
+      }
+      }
            className='comments_divComments_button'>Comentar</button>
       </div>
       <ListarComentarios idMovie={idMovie} Comentarios={Comentarios} />

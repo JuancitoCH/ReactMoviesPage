@@ -24,7 +24,6 @@ export default function Login() {
             })
         }).then(res=>res.json())
         .then(user=>{
-            console.log(user)
             // setUser({logged:true,name:user.data.firstName})
         }).catch(error=>console.log(error)) 
         // }).catch(error=>setUser({logged:false})) 

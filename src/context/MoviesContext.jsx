@@ -1,4 +1,4 @@
-import React,{createContext, useEffect, useReducer} from 'react'
+import React,{createContext, useContext, useEffect, useReducer} from 'react'
 import {reducerMovies,movies} from '../reducers/moviesReducer'
 import { reducerReviews, reviews } from '../reducers/reviewsReducer'
 
@@ -9,11 +9,10 @@ export default function MoviesContext({children}){
   //creacion de los reducers
   const [moviesState,dispatchMovies] = useReducer(reducerMovies,{movies:[{Title:"",Poster:"http://franciscoamk.com/wp-content/uploads/2019/11/Rectangulo-1-2.png",Realease:[],Cast:[],Genere:[]}]})
   const [reviewsState,dispatchReviews] = useReducer(reducerReviews,reviews)
-  
   useEffect(()=>{
     fetch("https://moiviesapi.rj.r.appspot.com/movies")
     .then(data=>data.json())
-    .then(moviesApi=>dispatchMovies({payloads:{movies:moviesApi}}))
+    .then(moviesApi=>dispatchMovies({type:"armarMovie",payloads:{movies:moviesApi}}))
   },[])
   
   const addNewReview =(dataNewReview,idMovie)=>{
@@ -31,7 +30,7 @@ export default function MoviesContext({children}){
       })
     })
     .then(res=>res.json())
-    .then(res=>console.log(res))
+    .then(res=>dispatchMovies({}))
 }
   
   const addNewMovie=(dataNewMovie)=>{
