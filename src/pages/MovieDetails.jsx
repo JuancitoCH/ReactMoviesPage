@@ -22,7 +22,6 @@ export default function MovieDetails() {
       })
     },[])
     // console.log(comentarios)
-
     // console.log(movie)
     
   return (
@@ -32,7 +31,7 @@ export default function MovieDetails() {
     <section className='app_home_movieDetails_section'>
         {/* <div className='Espacio_Header'></div> */}
         
-        <Detalles movie={movie} />
+        <Detalles movie={movie} raiting={comentarios} />
         <Trailer Trailer={movie.Trailer}/>
         <Comments idMovie={idMovie} Comentarios = {comentarios} />
     </section>

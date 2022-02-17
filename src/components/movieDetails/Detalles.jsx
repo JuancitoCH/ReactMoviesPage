@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import '../../css/detalles.css'
-export default function Detalles({ movie }) {
-
+export default function Detalles({ movie, raiting }) {
 
     function sacarAño (dato) {
         let año = "";
@@ -10,6 +9,28 @@ export default function Detalles({ movie }) {
         return año.substring(0,4);
     }
     // console.log(movie)
+    
+    function Raiting(){
+        let promedio=0;
+        raiting.map((objt) => promedio+=  objt.Raiting);
+        //console.log(promedio)
+        const promediofloat=promedio / (raiting.length);
+        promedio = Math.floor(promedio / raiting.length);
+        switch(promedio){
+            case 1:
+                return `🔅(${promediofloat})`;
+            case 2:
+                return `🔅🔅(${promediofloat})`;
+            case 3:
+                return `🔅🔅🔅(${promediofloat})`;
+            case 4:
+                return `🔅🔅🔅🔅(${promediofloat})`;
+            case 5:
+                return `🔅🔅🔅🔅🔅(${promediofloat})`;
+            default:
+                return `🔅🔅🔅🔅🔅(${promediofloat})`;
+        }
+    }
     return (
         <> {/*Armo un fragment para poner el último div*/}
         
@@ -25,7 +46,7 @@ export default function Detalles({ movie }) {
                         </Link>
                     </header>
                     <div className='ranking'>
-                        <span className='detalles__estrellitas'>🔅🔅🔅🔅🔅</span>
+                        <span className='detalles__estrellitas'>{Raiting()}</span>
                     </div>
 
                     <div className='descripcion'>

@@ -34,7 +34,6 @@ export default function MoviesContext({children}){
 }
   
   const addNewMovie=(dataNewMovie)=>{
-    
   }
 
   

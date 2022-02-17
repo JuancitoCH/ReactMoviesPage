@@ -18,7 +18,9 @@ export default function Header() {
         </div>
         {/* <img src="/peliculaIcono.svg" className='Header_Logo' alt="LogoHeader" /> */}
         
-        <BiCameraMovie className='Header_Logo' />
+        <Link to={'/'}>
+          <BiCameraMovie className='Header_Logo' />
+        </Link>
         <div className='Header_divBotonBusqueda'>
             <input type="text" className='Header_divBotonBusqueda_barraBusqueda'/>
             <button className='Header_divBotonBusqueda_button'><img src="/lupaicon.svg" className='Header_divBotonBusqueda_button_img' alt="" /></button>
