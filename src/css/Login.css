@@ -1,0 +1,46 @@
+.Login{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 200px;
+    margin-bottom: 2rem;
+}
+.Login-Son {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Login-Title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+.Login-ContForm{
+    width: 80%;
+}
+input{
+    margin: 1rem 0;
+}
+.Login-Form{
+    width:40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.Login-Input{
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.Login-InputBtn{
+    height: 2rem;
+    font-size: 1.2rem;
+    width: 30%;
+    margin: auto;
+    background: #FADE4E;
+}
+.Login-Registrarse{
+    margin-top: 2rem;
+}

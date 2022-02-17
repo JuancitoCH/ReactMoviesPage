@@ -31,22 +31,26 @@
 .comments_divComments_team{
     display: flex;
     padding-top: 15px;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
 }
 .comments_divComments_img{
-    width: 10%;
+    width: 6%;
 }
 .comments_divComments_input{
     color: var(--color_Comentarios);
     background-color: var(--background_Comentarios);
     border: solid 2px;
     font-size: 1.2rem;
-    
     padding: 5px;
-    border-radius: 5px ;
     margin: 7px;
-    width: 85%;
+    width: 92.5%;
     height: 3rem;
-    
+    border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
 }
 .comments_espacioBlanco{
     /* position: absolute; */
@@ -55,7 +59,7 @@
 }
 .comments_divComments_button{
     position: absolute;
-    right:10px;
+    right:23px;
     bottom: 0;
     border: none;
     background: rgba(249, 210, 73, 0.8);
@@ -65,6 +69,8 @@
     /* width: 10%;
     height: 30%; */
     font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
 }
 .comments_divComments_listaComentarios{
     color: var(--color_Comentario);

@@ -10,5 +10,6 @@ export default function Home() {
       <Slide/>
       <Movies/>
       <BarraPeliFather/>
+      
   </div>;
 }
