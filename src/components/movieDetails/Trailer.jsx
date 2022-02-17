@@ -3,9 +3,7 @@ import '../../css/trailer.css'
 
 export default function Trailer ({Trailer}) {
     return (
-        <iframe
-            width="560" 
-            height="315" 
+        <iframe className='trailer'
             src={Trailer}
             title="YouTube video player" 
             frameBorder="0" 

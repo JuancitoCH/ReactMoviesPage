@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.BarraPelis{
+    margin:4rem 0;
+}
 .Peli-Cont{
     width: 98%;
+    margin: auto;
     height: auto;
     background-color: black;
     font-family: 'Roboto', sans-serif;
@@ -13,13 +17,18 @@
     justify-content: center;
     margin-bottom: 1rem;
     background-repeat: no-repeat;
-    background-position:50% 25%;
+    background-position:50% 10%;
     background-size:cover;
     position:relative;
     z-index:1;
     box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .Peli-Cont::after{
     content:"";
@@ -28,17 +37,27 @@
     left:0;
     width:100%;
     height:100%;
-    background:rgba(14, 14, 14, 0.281);
+    background:rgba(14, 14, 14, 0.466);
     z-index:-1;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .Peli-Title{
     font-weight: bolder;
     font-size: 3rem;
     margin: 0 0 1rem 0;
+    text-shadow: #474747 3px 5px 2px;
 }
 .Peli-Description{
     width: 50%;
     font-weight: bold;
+}
+.LinkBarraPeli{
+    text-decoration: none;
+    color: white;
 }
 @media screen and (max-width:860px) {
     .Peli-Title{font-size: 1.5rem;}

@@ -6,18 +6,25 @@ import '../../css/comments.css'
 
 
 export default function Comments({idMovie,Comentarios}) {
-    console.log(Comentarios)
     const {addNewReview} = useContext(moviesContext)
     const inputComentario = useRef(null)
   return <div className='comments dark'>
-      <p className='comments_p'>Comentarios</p>
+      <h2>Comentarios</h2>
       <div className='comments_divComments'>
           <div className='comments_divComments_team'>
-          <img src="/UserProfileSvg.svg" className='comments_divComments_img' alt="" />
-          <input  ref={inputComentario} type='text' className='comments_divComments_input' placeholder="Comment something..."></input>
+            <img src="/UserProfileSvg.svg" className='comments_divComments_img' alt="" />
+            <input  ref={inputComentario} type='text' className='comments_divComments_input' placeholder="Deja un comentario"></input>
           </div>
           <div className='comments_espacioBlanco'></div>
-          <button onClick={()=>{addNewReview({type:"addReviewReducer",payloads:{idMovie,newReview:inputComentario.current.value}});inputComentario.current.value=""}} className='comments_divComments_button'>comentar</button>
+          <button onClick={()=>{
+            addNewReview({
+            Comentario:inputComentario.current.value
+          , Raiting:1
+          },idMovie)
+          inputComentario.current.value=""
+      }
+      }
+           className='comments_divComments_button'>Comentar</button>
       </div>
       <ListarComentarios idMovie={idMovie} Comentarios={Comentarios} />
   </div>;

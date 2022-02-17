@@ -1,8 +1,9 @@
 
 .contenedor {
-    margin-left: 5vw;
-    margin-top: 10vh;
+    
+    width: 1000px;
     display: inline-block;
+    color: #fff;
 }
 
 .imagen {
@@ -36,7 +37,6 @@ div span {
 
 .descripcion {
     margin-bottom: 20px;
-    margin-right: 10vw;
 }
 
 .participantes__p {

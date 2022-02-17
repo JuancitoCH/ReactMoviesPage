@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     /* Primero reseteo todo */
     margin: 0;
@@ -5,10 +7,10 @@
     /* Hago que el contenido llegue hasta los bordes */
     box-sizing: border-box;
     /* Me gusta el sans-serif */
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #39304A;
+    background-color: white;
 }
 
 .dark{

@@ -21,6 +21,11 @@
     top:10%;
     left: .5%;
     color: white;
+    transition: color ease .4s;
+}
+.Header_Logo:hover{
+    color: grey;
+    cursor: pointer;
 }
 .Header_divBotonBusqueda{
     padding: 7% 0px 10px 0px;
@@ -32,8 +37,10 @@
     padding-left:30px ;
     width: 60%;
     border: none;
+    height: 50px;
     border-top-left-radius: 11px ;
     border-bottom-left-radius: 11px ;
+    margin: 0;
 
 }
 .Header_divBotonBusqueda_button{
@@ -44,9 +51,16 @@
     border-top-right-radius: 11px ;
     border-bottom-right-radius: 11px ;
     transition:ease .5s background-color;
+    -webkit-transition:ease .5s background-color;
+    -moz-transition:ease .5s background-color;
+    -ms-transition:ease .5s background-color;
+    -o-transition:ease .5s background-color;
+    cursor: pointer;
 }
 .Header_divBotonBusqueda_button:hover{
     background-color: grey;
+    cursor: pointer;
+    
 }
 .Header_divBotonBusqueda_button_img{
     height: 50%;
@@ -64,25 +78,30 @@
     color: white;
     border-radius: 11px;
     transition: background-color ease .5s;
+    cursor: pointer;
+    margin-right: 1rem;
 }
 .Header_RegisterButton{
     background-color: var(--background_Header);
     color: white;
-
+    cursor: pointer;
     padding: 10px;
     font-size: 1rem;
     border: none;
     border-radius: 11px;
     transition: background-color ease .3s;
 
+
 }
 .Header_LoginButton:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 .Header_RegisterButton:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 .Header_EspacioBlanco{
     height: 30px;

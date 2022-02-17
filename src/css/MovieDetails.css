@@ -1,0 +1,32 @@
+.Fondo{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100vw;
+    background-color: #1A032C;
+}
+
+.app_home_movieDetails_section{
+    color: #D2CECE;
+}
+.Espacio_Header{
+    height: 100px;
+    background-color: rgba(255, 255, 255,.2);
+}
+.app_home_movieDetails_section{
+    width: 90%;
+    padding-top: 200px;
+    margin: 0 5%;
+    margin-bottom: 2rem;
+}
+.Trailer{
+    height: 500px;
+}
+/* h2{
+    font-size: 1.5rem;
+    color: #ffff;
+    margin: 2rem 0;
+} */
+/* .Trailer-Title{
+
+} */
