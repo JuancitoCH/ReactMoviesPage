@@ -4,6 +4,9 @@ import { BiCameraMovie } from 'react-icons/bi';
 // import {useHistory} from 'react-router-dom'
 // BiCameraMovie
 import {Link} from 'react-router-dom'
+
+import LogOut from './LogOut';
+
 export default function Header() {
 
   return (
