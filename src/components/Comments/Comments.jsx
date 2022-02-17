@@ -18,6 +18,6 @@ export default function Comments({idMovie,Comentarios}) {
           <div className='comments_espacioBlanco'></div>
           <button onClick={()=>{addNewReview({type:"addReviewReducer",payloads:{idMovie,newReview:inputComentario.current.value}});inputComentario.current.value=""}} className='comments_divComments_button'>Comentar</button>
       </div>
-      <ListarComentarios idMovie={idMovie} Comentarios={Comentarios} />
+      {/*<ListarComentarios idMovie={idMovie} Comentarios={Comentarios} />*/}
   </div>;
 }

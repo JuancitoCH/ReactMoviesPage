@@ -21,21 +21,20 @@ export default function MovieDetails() {
         setComentarios(movieDetails.Comentarios)
       })
     },[])
-
-
-    // console.log(movie)
     
   return (
     <>
-    <Header/>
-        <div className='Fondo'></div>
-    <section className='app_home_movieDetails_section'>
-        {/* <div className='Espacio_Header'></div> */}
-        
-        <Detalles movie={movie} />
-        <Trailer Trailer={movie.Trailer}/>
-        <Comments idMovie={idMovie} Comentarios = {comentarios}/>
-    </section>
+      <div className="colorFondo">
+        <Header />
+        <div className='Fondo' style={{ backgroundImage: `url(${movie.Banner})` }}></div>
+        <section className='app_home_movieDetails_section'>
+          {/* <div className='Espacio_Header'></div> */}
+
+          <Detalles movie={movie} />
+          <Trailer Trailer={movie.Trailer} />
+          <Comments idMovie={idMovie} Comentarios={comentarios} />
+        </section>
+      </div>
     </>
   )
 }
