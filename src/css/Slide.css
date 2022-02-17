@@ -51,6 +51,13 @@
     animation: btnefect 0.2s both;
     -webkit-animation: btnefect 0.2s both;
 }
+.Slide-BtnController:hover{
+    color: #aaa;
+}
+.Slide-DivController{
+    width: 100%;
+    cursor: pointer;
+}
 @keyframes btnefect {
     50%{
         font-size: 1.5rem;

@@ -3,6 +3,8 @@ import {useParams} from 'react-router-dom'
 import Detalles from '../components/movieDetails/Detalles'
 import Comments from '../components/Comments/Comments'
 import Trailer from '../components/movieDetails/Trailer'
+import Header from '../components/Header/Header'
+import '../css/MovieDetails.css'
 
 export default function MovieDetails() {
     
@@ -24,11 +26,13 @@ export default function MovieDetails() {
 
     
   return (
-    <section className='app_home_movieDetails_section'>
-        
-        <Detalles movie={movie} />
-        <Trailer Trailer={movie.Trailer}/>
-        <Comments idMovie={idMovie} Comentarios = {comentarios}/>
-    </section>
+    <div>
+      <Header/>
+      <section className='app_home_movieDetails_section'>
+          <Detalles movie={movie} />
+          <Trailer Trailer={movie.Trailer}/>
+          <Comments idMovie={idMovie} Comentarios = {comentarios}/>
+      </section>
+    </div>
   )
 }

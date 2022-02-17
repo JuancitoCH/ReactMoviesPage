@@ -32,13 +32,14 @@ export default function Slide() {
     <div className="Slide">
       <div className="Slide-Son" onClick={redireccionar}>
         <div className="Slide-ContImg">
-          <ImgenSlide movie={SlideImgs[index]} key={uniqid()}/>
+          <ImgenSlide movie={SlideImgs[index]} key={uniqid()} />
         </div>
       </div>
-            <div className="Slide-Controllers">
+      <div className="Slide-Controllers">
         <button className="Slide-BtnController" onClick={AntImg}>
           <BsChevronLeft />
         </button>
+        <div className="Slide-DivController" onClick={redireccionar}></div>
         <button className="Slide-BtnController" onClick={SigImg}>
           <BsChevronRight />
         </button>

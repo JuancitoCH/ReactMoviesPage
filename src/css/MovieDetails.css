@@ -1,0 +1,17 @@
+.app_home_movieDetails_section{
+    width: 90%;
+    padding-top: 200px;
+    margin: 0 5%;
+    margin-bottom: 2rem;
+}
+.Trailer{
+    height: 500px;
+}
+h2{
+    font-size: 1.5rem;
+    color: #ffff;
+    margin: 2rem 0;
+}
+/* .Trailer-Title{
+    
+} */
