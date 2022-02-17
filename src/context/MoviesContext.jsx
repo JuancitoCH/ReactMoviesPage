@@ -1,14 +1,17 @@
-import React,{createContext, useContext, useEffect, useReducer} from 'react'
-import {reducerMovies,movies} from '../reducers/moviesReducer'
-import { reducerReviews, reviews } from '../reducers/reviewsReducer'
+import React,{createContext, useEffect, useReducer, useState} from 'react'
+import {reducerMovies} from '../reducers/moviesReducer'
+
 
 //creacion del contexto
 export const moviesContext = createContext()
 
 export default function MoviesContext({children}){
+  const [actualizar,setActualizar] = useState(1)
   //creacion de los reducers
+  
   const [moviesState,dispatchMovies] = useReducer(reducerMovies,{movies:[{Title:"",Poster:"http://franciscoamk.com/wp-content/uploads/2019/11/Rectangulo-1-2.png",Realease:[],Cast:[],Genere:[]}]})
-  const [reviewsState,dispatchReviews] = useReducer(reducerReviews,reviews)
+  // const [reviewsState,dispatchReviews] = useReducer(reducerReviews,reviews)
+
   useEffect(()=>{
     fetch("https://moiviesapi.rj.r.appspot.com/movies")
     .then(data=>data.json())
@@ -30,23 +33,15 @@ export default function MoviesContext({children}){
       })
     })
     .then(res=>res.json())
-    .then(res=>dispatchMovies({}))
+    .then(res=>setActualizar(actualizar+1))
 }
   
-  const addNewMovie=(dataNewMovie)=>{
-  }
-
-  
-
   const contextValues = {
     moviesState,
-    reviewsState,
     dispatchMovies,
-    dispatchReviews,
-    addNewReview
+    addNewReview,
+    actualizar
   }
-
-
 
   return (
       <moviesContext.Provider value={contextValues}>

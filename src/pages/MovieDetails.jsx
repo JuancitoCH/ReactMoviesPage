@@ -1,13 +1,13 @@
-import React,{useEffect, useState} from 'react'
+import React,{useContext, useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
+import { moviesContext } from '../context/MoviesContext'
 import Detalles from '../components/movieDetails/Detalles'
 import Comments from '../components/Comments/Comments'
 import Trailer from '../components/movieDetails/Trailer'
 import Header from '../components/Header/Header'
-
 import '../css/MovieDetails.css'
 export default function MovieDetails() {
-    
+    const {actualizar} = useContext(moviesContext)
     const [movie,setMovie] = useState({})
     const [comentarios,setComentarios] = useState([])
     //capturamos el id de la peli del url
@@ -20,7 +20,7 @@ export default function MovieDetails() {
         setMovie(movieDetails.Movie)
         setComentarios(movieDetails.Comentarios)
       })
-    },[])
+    },[actualizar])
     // console.log(comentarios)
     // console.log(movie)
     

@@ -30,6 +30,7 @@ export default function Comments({idMovie,Comentarios}) {
             Comentario:inputComentario.current.value
           , Raiting:selectComentario.current.value
           },idMovie)
+          inputComentario.current.value=""
       }
       }
            className='comments_divComments_button'>Comentar</button>
