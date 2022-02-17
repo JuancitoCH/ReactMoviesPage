@@ -9,8 +9,10 @@
 .Fondo{
     z-index: -1;
     position: absolute;
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 530px;
     opacity: 0.3;
 }
 
