@@ -1,35 +1,62 @@
 .MarginTop{
-    padding-top: 5%;
+    margin-top: 5%;
 }
 .MarginLeft{
     padding-left: 4%;
 }
-
-
-.pageFiltros_div{
-
-}
-.listaGeneros{
-    /* position: absolute; */
-    position: absolute;
-}
-
-.cadaGenero{
-    border: none;
-    display: block;
-    font-size: 1.8rem;
-    background-color: white;
-}
-.cadaGenero:hover{
-    border: none;
-    display: block;
-    font-size: 2rem;
-    color: #1A032C;
-    font-weight: bolder;
-    cursor: pointer;
-}
-.listaPeliculas{
+/*Main*/
+.MovieList-Main{
+    width: 98%;
+    padding: 0 1%;
     display: flex;
-    justify-content: center;
+}
+/*Aside*/
+.MovieList-Aside{
+    margin-top: 7rem;
+    padding: 1%;
+    width: 210px;
+    height: 100%;
+    float: left;
+    background-color: rgba(180, 180, 180, 0.418);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.MoviesList-Aside-Title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: aqua;
+    margin-bottom: 1rem;
+}
+.MovieList-Aside-Genero{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border: none;
+    display: block;
+    background: none;
+    margin-left: 1rem;
+    position: relative;
+}
+.MovieList-Aside-Genero::before{
+    position: absolute;
+    left: -1rem;
+    content: "";
+    width: 0.5rem;
+    height: 100%;
+    background-color: aqua;
+}
+.MovieList-Aside-Genero:hover{
+    font-weight: bold;
+}
+/*Section*/
+.MovieList-Section{
+    width: 100%;
+    float: right;
+    display: flex;
+    justify-content:center ;
+    align-content: center;
     flex-wrap: wrap;
 }
