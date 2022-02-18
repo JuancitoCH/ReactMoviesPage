@@ -4,7 +4,6 @@ import { BiCameraMovie } from 'react-icons/bi';
 // import {useHistory} from 'react-router-dom'
 // BiCameraMovie
 import {Link} from 'react-router-dom'
-
 import LogOut from './LogOut';
 
 export default function Header() {
@@ -26,7 +25,7 @@ export default function Header() {
           />
         </button>
       </div>
-
+      
       <div className="Header_botones_div">
         <Link to={"/login"}>
           <button className="Header_LoginButton">Login</button>
@@ -34,6 +33,7 @@ export default function Header() {
         <Link to={"/register"}>
           <button className="Header_RegisterButton">Register</button>
         </Link>
+        <LogOut></LogOut>
       </div>
 
       <div className="Header_EspacioBlanco"></div>

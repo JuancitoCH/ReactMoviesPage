@@ -1,0 +1,17 @@
+.LogOut__Button{
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background-color: var(--background_Header);
+    color: white;
+    border-radius: 11px;
+    transition: background-color ease .5s;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.LogOut__Button:hover{
+background-color: white;
+color: black;
+cursor: pointer;
+}

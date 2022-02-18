@@ -5,22 +5,9 @@
 /*Background*/
 .Movie-Details-colorFondo {
     position: relative;
-<<<<<<< HEAD
-    z-index: 1;
     width: 100%;
     height: 100%;
     background-color: #1A032C;
-}
-
-.Fondo{
-    z-index: 2;
-    position: absolute;
-    background-size:cover;
-=======
-    width: 100%;
-    height: 100%;
-    background-color: #1A032C;
->>>>>>> Ivan
     background-repeat: no-repeat;
     background-size: 100% 500px;
     z-index: 1;
@@ -34,21 +21,8 @@
     background-image: linear-gradient(#1a032c9f  30%, #1A032C 100%);
     z-index: -1;
 }
-<<<<<<< HEAD
-
-.app_home_movieDetails_section{
-    z-index: 3;
-    color: #D2CECE;
-}
-.Espacio_Header{
-    height: 100px;
-    background-color: rgba(255, 255, 255,.2);
-}
-.app_home_movieDetails_section{
-=======
 /*Sections*/
 .Movie-Details-SectionMain{
->>>>>>> Ivan
     width: 90%;
     padding-top: 200px;
     margin: 0 5%;
