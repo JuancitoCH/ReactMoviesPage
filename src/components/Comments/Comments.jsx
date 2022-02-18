@@ -9,6 +9,7 @@ export default function Comments({idMovie,Comentarios}) {
     const {addNewReview} = useContext(moviesContext)
     const inputComentario = useRef(null)
     const selectComentario = useRef(null)
+    //Podemos sacar el rating promedio y pasarlo al contexto
   return (
     <div className="comments dark">
       <h2 className="Title-H2">Comentarios</h2>
@@ -46,8 +47,7 @@ export default function Comments({idMovie,Comentarios}) {
             );
             inputComentario.current.value = "";
           }}
-          className="comments_divComments_button"
-        >
+          className="comments_divComments_button">
           Comentar
         </button>
       </div>
