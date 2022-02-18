@@ -20,7 +20,7 @@ export default function MovieDetails() {
         setMovie(movieDetails.Movie)
         setComentarios(movieDetails.Comentarios)
       })
-    },[])
+    },[actualizar])
     
   return (
     <div
