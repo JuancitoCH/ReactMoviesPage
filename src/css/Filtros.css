@@ -3,6 +3,7 @@
 }
 .listaGeneros{
     /* position: absolute; */
+    position: absolute;
 }
 
 .cadaGenero{

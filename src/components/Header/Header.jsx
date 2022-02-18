@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 export default function Header() {
 
   return (
-    <div className="Header dark">
+    <div className="Header dark" id='Header'>
       {/* <img src="/peliculaIcono.svg" className='Header_Logo' alt="LogoHeader" /> */}
       <Link to={"/"} className="Header_Logo">
         <BiCameraMovie className="Header_Logo_img"/>
@@ -22,6 +22,7 @@ export default function Header() {
             alt=""
           />
         </button>
+      <Link className="filtrarLink"to="/movieslist">Filtrar</Link>
       </div>
 
       <div className="Header_botones_div">

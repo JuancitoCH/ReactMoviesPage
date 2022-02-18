@@ -4,8 +4,8 @@ import MovieDetails from './pages/MovieDetails';
 import Footer from './components/Footer/Footer';
 import Register from './pages/Register';
 import Login from './pages/Login';
-import Filtros from './pages/Filtros';
 import MoviesList from './pages/MoviesList'
+import NotFound from './pages/NotFound'
 import './css/app.css'
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/movieslist' element={<MoviesList/>}/>
-        <Route path='/filtrar' element={<Filtros/>}/>
+        <Route path='*' element={<NotFound/>}/>
+        {/* <Route path='/filtrar' element={<Filtros/>}/> */}
 
       </Routes>
     </BrowserRouter>
