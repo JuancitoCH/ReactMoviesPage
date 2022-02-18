@@ -17,7 +17,6 @@ export default function Header() {
         </Link>
         </div>
         {/* <img src="/peliculaIcono.svg" className='Header_Logo' alt="LogoHeader" /> */}
-        
         <Link to={'/'}>
           <BiCameraMovie className='Header_Logo' />
         </Link>
