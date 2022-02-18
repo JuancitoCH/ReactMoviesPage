@@ -22,8 +22,8 @@ export default function LogOut () {
                 })
             }).then(res=>res.json())
             .then(user=>{
-                if(user.access) return sesionInactiva()
-                return alert("Cred Incorrect")
+                if(user.access = false ) return sesionInactiva()
+                return alert(user.access)
             }).catch(error=>console.log(error)) 
       }
 

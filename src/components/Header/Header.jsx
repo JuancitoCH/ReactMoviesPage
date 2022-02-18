@@ -3,16 +3,19 @@ import '../../css/Header.css'
 import { BiCameraMovie } from 'react-icons/bi';
 // import {useHistory} from 'react-router-dom'
 // BiCameraMovie
-import {Link} from 'react-router-dom'
-import LogOut from './LogOut';
+import { Link } from 'react-router-dom'
+import Sesiones from './Sesiones'
+
 
 export default function Header() {
+
+  let estadoSesion = false;
 
   return (
     <div className="Header dark" id='Header'>
       {/* <img src="/peliculaIcono.svg" className='Header_Logo' alt="LogoHeader" /> */}
       <Link to={"/"} className="Header_Logo">
-        <BiCameraMovie className="Header_Logo_img"/>
+        <BiCameraMovie className="Header_Logo_img" />
       </Link>
 
       <div className="Header_divBotonBusqueda">
@@ -24,17 +27,11 @@ export default function Header() {
             alt=""
           />
         </button>
-      <Link className="filtrarLink"to="/movieslist">Filtrar</Link>
+        <Link className="filtrarLink" to="/movieslist">Filtrar</Link>
       </div>
-      
+
       <div className="Header_botones_div">
-        <Link to={"/login"}>
-          <button className="Header_LoginButton">Login</button>
-        </Link>
-        <Link to={"/register"}>
-          <button className="Header_RegisterButton">Register</button>
-        </Link>
-        <LogOut></LogOut>
+        <Sesiones estado={estadoSesion}></Sesiones>
       </div>
 
       {/* <div className="Header_EspacioBlanco"></div> */}
