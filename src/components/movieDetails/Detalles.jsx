@@ -32,8 +32,6 @@ export default function Detalles({ movie, raiting }) {
         }
     }
     return (
-        <> {/*Armo un fragment para poner el último div*/}
-        
             <div className='principal'>
                 <div className='contenedor'> {/*Toda la clase contenedor está en modo inline-block*/}
 
@@ -41,9 +39,7 @@ export default function Detalles({ movie, raiting }) {
                         <img className='imagen__img' alt={movie.Title} src={movie.Poster} />
                     </div>
                     <header className='titulo'>
-                        <Link className='titulo__Link' to={'/movie/' + movie._id}>
-                            <h2 className='titulo__nombre'>{movie.Title + ' (' + 2021 + ')'}</h2>
-                        </Link>
+                        <h2 className='titulo__nombre'>{movie.Title + ' (' + 2021 + ')'}</h2>
                     </header>
                     <div className='ranking'>
                         <span className='detalles__estrellitas'>{Raiting()}</span>
@@ -62,7 +58,4 @@ export default function Detalles({ movie, raiting }) {
                 {/*Este div de abajo sirve para separar los detalles del trailer*/}
                 <div className='espacio'></div>
             </div>
-        </>
-    );
-
-}
+    );}

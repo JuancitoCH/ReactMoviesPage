@@ -23,18 +23,18 @@ export default function MovieDetails() {
     },[])
     
   return (
-    <>
+    <div
+      className="Movie-Details-colorFondo"
+      style={{ backgroundImage: `url(${movie.Banner})` }}
+    >
       <Header />
-      <div className="colorFondo">
-        <div className='Fondo' style={{ backgroundImage: `url(${movie.Banner})` }}></div>
-        <section className='app_home_movieDetails_section'>
-          {/* <div className='Espacio_Header'></div> */}
-
-          <Detalles movie={movie} raiting={comentarios} />
-          <Trailer Trailer={movie.Trailer} />
-          <Comments idMovie={idMovie} Comentarios={comentarios} />
-        </section>
-      </div>
-    </>
-  )
+      {/* <div className='Fondo' style={{ backgroundImage: `url(${movie.Banner})` }}></div> */}
+      <section className="Movie-Details-SectionMain">
+        {/* <div className='Espacio_Header'></div> */}
+        <Detalles movie={movie} raiting={comentarios}/>
+        <Trailer Trailer={movie.Trailer} />
+        <Comments idMovie={idMovie} Comentarios={comentarios} />
+      </section>
+    </div>
+  );
 }

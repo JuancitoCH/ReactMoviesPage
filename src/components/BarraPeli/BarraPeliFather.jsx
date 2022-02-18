@@ -7,7 +7,7 @@ export default function BarraPeliFather() {
   const moviesReducido = [...movies].slice(0, 3);
   return (
     <section className="BarraPelis">
-      <h2 className="Barra-Peli-title">Lo mas popular</h2>
+      <h2 className="Barra-Peli-title shadow">Lo Más Popular</h2>
       {moviesReducido.map((movie) => (
         <BarraPeli
           key={uniqid()}
