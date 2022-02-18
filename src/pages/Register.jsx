@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header/Header";
 import "../css/Header.css";
 import "../css/Login.css";
+
 export default function Login() {
+
     function signUp(event) {
       event.preventDefault();
       const { userName,email, password } = event.target;
@@ -24,7 +26,7 @@ export default function Login() {
             })
         }).then(res=>res.json())
         .then(user=>{
-          if(user.access) return window.location.replace("http://localhost:3000/")
+          if(user.valid) return window.location.replace("http://localhost:3000/")
             return alert("Cred Incorrect")
           console.log(user)
           // if(user.succes){window.history.pushState(null,"",)}

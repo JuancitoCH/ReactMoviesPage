@@ -1,10 +1,12 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './pages/Home';
 import MovieDetails from './pages/MovieDetails';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import './css/app.css'
 import Footer from './components/Footer/Footer';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import MoviesList from './pages/MoviesList'
+import NotFound from './pages/NotFound'
+import './css/app.css'
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
         <Route path='/movie/:id' element={<MovieDetails/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/movieslist' element={<MoviesList/>}/>
+        <Route path='*' element={<NotFound/>}/>
+        {/* <Route path='/filtrar' element={<Filtros/>}/> */}
+
       </Routes>
     </BrowserRouter>
     <Footer/>

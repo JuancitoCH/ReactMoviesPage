@@ -4,14 +4,18 @@
     width: 1000px;
     display: inline-block;
     color: #fff;
+    
 }
+.principal{
 
+}
 .imagen {
     float: left;
     margin-right: 2vw;
 }
 
 .imagen__img {
+    object-fit: cover;
     height: 45vh;
     width: 200px;
     border-radius: 5%;
@@ -39,10 +43,12 @@ div span {
     margin-bottom: 20px;
 }
 
+.principal{
+    z-index: 3;
+}
 .participantes__p {
     margin-bottom: 10px;
 }
-
 .espacio {
     margin-top: 5vh;
 }

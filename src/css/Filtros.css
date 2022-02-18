@@ -1,0 +1,27 @@
+.pageFiltros_div{
+
+}
+.listaGeneros{
+    /* position: absolute; */
+    position: absolute;
+}
+
+.cadaGenero{
+    border: none;
+    display: block;
+    font-size: 1.8rem;
+    background-color: white;
+}
+.cadaGenero:hover{
+    border: none;
+    display: block;
+    font-size: 2rem;
+    color: #1A032C;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.listaPeliculas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

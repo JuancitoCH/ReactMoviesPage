@@ -21,20 +21,20 @@ export default function MovieDetails() {
         setComentarios(movieDetails.Comentarios)
       })
     },[actualizar])
-    // console.log(comentarios)
-
-    // console.log(movie)
     
   return (
-    <>
-    <Header/>
-        <div className='Fondo'></div>
-    <section className='app_home_movieDetails_section'>
+    <div
+      className="Movie-Details-colorFondo"
+      style={{ backgroundImage: `url(${movie.Banner})` }}
+    >
+      <Header />
+      {/* <div className='Fondo' style={{ backgroundImage: `url(${movie.Banner})` }}></div> */}
+      <section className="Movie-Details-SectionMain">
         {/* <div className='Espacio_Header'></div> */}
-        <Detalles movie={movie} />
-        <Trailer Trailer={movie.Trailer}/>
-        <Comments idMovie={idMovie} Comentarios = {comentarios} />
-    </section>
-    </>
-  )
+        <Detalles movie={movie} raiting={comentarios}/>
+        <Trailer Trailer={movie.Trailer} />
+        <Comments idMovie={idMovie} Comentarios={comentarios} />
+      </section>
+    </div>
+  );
 }
