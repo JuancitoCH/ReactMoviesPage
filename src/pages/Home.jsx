@@ -11,7 +11,6 @@ export default function Home() {
       <div className='Home_EspacioBlanco_Header_Slide'></div>
       <Slide/>
       <Movies/>
-      <BarraPeliFather/>
-      
+      <BarraPeliFather/>   
   </div>;
 }

@@ -84,10 +84,11 @@
     padding: 10px;
     border-radius: 5px;
     overflow: hidden;
+    align-items: center;
 
 }
 .comments_divComments_listaComentarios_unComentario_img{
-    width: 9%;
+    width: 6%;
 
 }
 .comments_divComments_listaComentarios_unComentario_p{
