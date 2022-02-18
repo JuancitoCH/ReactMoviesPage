@@ -4,10 +4,12 @@ import { moviesContext } from "../../context/MoviesContext";
 import uniqid from "uniqid";
 export default function BarraPeliFather() {
   const {moviesState:{movies}} = useContext(moviesContext);
+  const moviesReducido = [...movies].slice(0, 3);
   return (
-    <section className='BarraPelis'>
-      {movies.map((movie) => (
-        <BarraPeli 
+    <section className="BarraPelis">
+      <h2 className="Barra-Peli-title shadow">Lo Más Popular</h2>
+      {moviesReducido.map((movie) => (
+        <BarraPeli
           key={uniqid()}
           img={movie.Banner}
           titulo={movie.Title}

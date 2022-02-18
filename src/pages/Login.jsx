@@ -8,7 +8,7 @@ export default function Login() {
         event.preventDefault()
         const {email,password} = event.target
 
-        console.log(email.value,password.value)
+        // console.log(email.value,password.value)
 
         //registro: "https://backendtzuzulcode.wl.r.appspot.com/auth/signup"
         //Datos para el registro: firstName,lastName,birthday,city,email,password
@@ -24,7 +24,10 @@ export default function Login() {
             })
         }).then(res=>res.json())
         .then(user=>{
+            if(user.access) return window.location.replace("http://localhost:3000/")
+            return alert("Cred Incorrect")
             console.log(user)
+            // if(user.access) return <Link to="/" />
             // setUser({logged:true,name:user.data.firstName})
         }).catch(error=>console.log(error)) 
         // }).catch(error=>setUser({logged:false})) 
@@ -41,7 +44,7 @@ export default function Login() {
                     <button className='Login-InputBtn'>Iniciar</button>
                 </form>
             </section>
-            <p className='Login-Registrarse'>¿Tienes una cuenta? <Link to={'/register'}>Click Aquí</Link> </p>
+            <p className='Login-Registrarse'>¿No Tienes una cuenta? <Link to={'/register'}>Click Aquí</Link> </p>
         </section>
     </div>
   )

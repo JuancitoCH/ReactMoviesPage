@@ -1,5 +1,11 @@
-.colorFondo {
+.Espacio_Header{
+    height: 100px;
+    background-color: #1A032C;
+}
+/*Background*/
+.Movie-Details-colorFondo {
     position: relative;
+<<<<<<< HEAD
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -10,11 +16,25 @@
     z-index: 2;
     position: absolute;
     background-size:cover;
-    background-repeat: no-repeat;
+=======
     width: 100%;
-    height: 530px;
-    opacity: 0.3;
+    height: 100%;
+    background-color: #1A032C;
+>>>>>>> Ivan
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    z-index: 1;
 }
+.Movie-Details-colorFondo::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(#1a032c9f  30%, #1A032C 100%);
+    z-index: -1;
+}
+<<<<<<< HEAD
 
 .app_home_movieDetails_section{
     z-index: 3;
@@ -25,19 +45,28 @@
     background-color: rgba(255, 255, 255,.2);
 }
 .app_home_movieDetails_section{
+=======
+/*Sections*/
+.Movie-Details-SectionMain{
+>>>>>>> Ivan
     width: 90%;
     padding-top: 200px;
     margin: 0 5%;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    color: #D2CECE;
+    z-index: 2;
 }
-.Trailer{
-    height: 500px;
-}
-/* h2{
+/**/
+.Title-H2{
     font-size: 1.5rem;
     color: #ffff;
-    margin: 2rem 0;
-} */
-/* .Trailer-Title{
+    margin: 2rem 0
+}
+.comments{
+    width: 100%;
+}
 
+
+
+/* .Trailer-Title{
 } */

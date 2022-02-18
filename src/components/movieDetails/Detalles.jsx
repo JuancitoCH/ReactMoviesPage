@@ -1,18 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import '../../css/detalles.css'
-export default function Detalles({ movie }) {
-
+export default function Detalles({ movie, raiting }) {
 
     function sacarAño (dato) {
         let año = "";
         año = dato;
         return año.substring(0,4);
     }
-    console.log(movie)
+    // console.log(movie)
+    
+    function Raiting(){
+        let promedio=0;
+        raiting.map((objt) => promedio+=  objt.Raiting);
+        //console.log(promedio)
+        const promediofloat=promedio / (raiting.length);
+        promedio = Math.floor(promedio / raiting.length);
+        switch(promedio){
+            case 1:
+                return `🔅(${promediofloat})`;
+            case 2:
+                return `🔅🔅(${promediofloat})`;
+            case 3:
+                return `🔅🔅🔅(${promediofloat})`;
+            case 4:
+                return `🔅🔅🔅🔅(${promediofloat})`;
+            case 5:
+                return `🔅🔅🔅🔅🔅(${promediofloat})`;
+            default:
+                return `🔅(0)`;
+        }
+    }
     return (
-        <> {/*Armo un fragment para poner el último div*/}
-        
             <div className='principal'>
                 <div className='contenedor'> {/*Toda la clase contenedor está en modo inline-block*/}
 
@@ -23,7 +41,7 @@ export default function Detalles({ movie }) {
                         <h2 className='titulo__nombre'>{movie.Title + ' (' + 2021 + ')'}</h2>
                     </header>
                     <div className='ranking'>
-                        <span className='detalles__estrellitas'>🔅🔅🔅🔅🔅</span>
+                        <span className='detalles__estrellitas'>{Raiting()}</span>
                     </div>
 
                     <div className='descripcion'>
@@ -39,7 +57,4 @@ export default function Detalles({ movie }) {
                 {/*Este div de abajo sirve para separar los detalles del trailer*/}
                 <div className='espacio'></div>
             </div>
-        </>
-    );
-
-}
+    );}
