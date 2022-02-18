@@ -123,3 +123,17 @@
 .Header_EspacioBlanco{
     height: 30px;
 }
+.filtrarLink{
+    /* position: absolute;
+    top: 0;
+    right: 20px; */
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.filtrarLink:hover{
+    color: grey;
+    font-weight: bolder;
+}

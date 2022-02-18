@@ -14,7 +14,7 @@ export default function Home() {
       <Slide />
       <Movies />
       <Link to={"/movieslist"} className="CenterBlock">
-        <button className="Movies-BtnMoreMovies"> Más Películas </button>
+        <button className="Movies-BtnMoreMovies" > Más Películas </button>
       </Link>
       <BarraPeliFather />
     </div>

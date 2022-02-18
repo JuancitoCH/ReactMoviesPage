@@ -26,7 +26,7 @@ export default function Login() {
             })
         }).then(res=>res.json())
         .then(user=>{
-          if(user.access) return window.location.replace("http://localhost:3000/")
+          if(user.valid) return window.location.replace("http://localhost:3000/")
             return alert("Cred Incorrect")
           console.log(user)
           // if(user.succes){window.history.pushState(null,"",)}

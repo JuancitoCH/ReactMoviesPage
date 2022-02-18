@@ -1,0 +1,9 @@
+.section_notFound{
+    display: flex;
+    justify-content: center;
+}
+.notFound_h1{
+    font-size: 4rem;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
