@@ -5,7 +5,9 @@
     display: inline-block;
     color: #fff;
 }
+.principal{
 
+}
 .imagen {
     float: left;
     margin-right: 2vw;
@@ -39,10 +41,12 @@ div span {
     margin-bottom: 20px;
 }
 
+.principal{
+    z-index: 3;
+}
 .participantes__p {
     margin-bottom: 10px;
 }
-
 .espacio {
     margin-top: 5vh;
 }
