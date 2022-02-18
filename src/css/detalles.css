@@ -4,6 +4,7 @@
     width: 1000px;
     display: inline-block;
     color: #fff;
+    
 }
 .principal{
 
@@ -14,6 +15,7 @@
 }
 
 .imagen__img {
+    object-fit: cover;
     height: 45vh;
     width: 200px;
     border-radius: 5%;
