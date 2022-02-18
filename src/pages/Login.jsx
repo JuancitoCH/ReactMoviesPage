@@ -3,7 +3,15 @@ import { Link } from "react-router-dom";
 import Header from '../components/Header/Header'
 import '../css/Header.css'
 import '../css/Login.css'
+
+
 export default function Login() {
+
+    function sesionActiva(){
+        window.location.replace("http://localhost:3000/")
+        alert("Sesión Activa")
+    }
+
     function signIn(event){
         event.preventDefault()
         const {email,password} = event.target
@@ -24,9 +32,9 @@ export default function Login() {
             })
         }).then(res=>res.json())
         .then(user=>{
-            if(user.access) return window.location.replace("http://localhost:3000/")
+            if(user.access) return sesionActiva()
             return alert("Cred Incorrect")
-            console.log(user)
+            
             // if(user.access) return <Link to="/" />
             // setUser({logged:true,name:user.data.firstName})
         }).catch(error=>console.log(error)) 

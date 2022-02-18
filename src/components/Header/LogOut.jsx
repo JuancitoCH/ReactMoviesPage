@@ -3,6 +3,11 @@ import '../../css/logout.css';
 
 export default function LogOut () {
     
+    function sesionInactiva(){
+        window.location.replace("http://localhost:3000/")
+        alert("Sesión Inactiva")
+    }
+
     function cerrarSesion(){
     
         fetch("https://moiviesapi.rj.r.appspot.com/user/login",{
@@ -17,7 +22,7 @@ export default function LogOut () {
                 })
             }).then(res=>res.json())
             .then(user=>{
-                if(user.access) return window.location.replace("http://localhost:3000/")
+                if(user.access) return sesionInactiva()
                 return alert("Cred Incorrect")
             }).catch(error=>console.log(error)) 
       }
