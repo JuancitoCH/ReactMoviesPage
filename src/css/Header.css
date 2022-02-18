@@ -6,31 +6,44 @@
     --background_Header:rgba(33, 33, 33, 0.4);
     --background_input:white;
 }
+/*Cont*/
 .Header{
     top: 0;
     position: absolute;
     width: 100%;
     background-color: var(--background_Header);
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
     /* border: white solid 3px; */
 }
+/*Logo*/
 .Header_Logo{
-    position: absolute;
-    width: 10%;
-    height: 60%;
-    top:10%;
-    left: .5%;
+    width: 20%;
     color: white;
     transition: color ease .4s;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Header_Logo:hover{
     color: grey;
     cursor: pointer;
 }
+.Header_Logo_img{
+    width: 100%;
+    height: 50%;
+}
+
+/*Busqueda*/
 .Header_divBotonBusqueda{
-    padding: 7% 0px 10px 0px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 60%;
 }
 .Header_divBotonBusqueda_barraBusqueda{
     font-size: 1.3rem;
@@ -65,10 +78,12 @@
 .Header_divBotonBusqueda_button_img{
     height: 50%;
 }
+/*Botones Login Register*/
 .Header_botones_div{
-    position: absolute;
-    right: 10px;
-    margin-top: 5px;
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    padding-right: 1%;
 }
 .Header_LoginButton{
     font-size: 1rem;
@@ -88,10 +103,12 @@
     padding: 10px;
     font-size: 1rem;
     border: none;
-    border-radius: 11px;
     transition: background-color ease .3s;
-
-
+    border-radius: 11px;
+    -webkit-border-radius:11px;
+    -moz-border-radius:11px;
+    -ms-border-radius:11px;
+    -o-border-radius:11px;
 }
 .Header_LoginButton:hover{
     background-color: white;
