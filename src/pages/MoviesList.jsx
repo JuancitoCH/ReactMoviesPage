@@ -6,7 +6,7 @@ import CardMovie from '../components/Movies/CardMovie'
 import uniqid from 'uniqid'
 
 export default function MoviesList() {
-  const listaGeneros=["accion","aventura","ciencia ficcion","comedia","musical"]
+  const listaGeneros=["accion","aventura","ciencia ficcion","comedia","musical","animacion"]
     const [moviesGenere,setMoviesGenere] = useState()
     const moviesFilter=(genero)=>{
         fetch("https://moiviesapi.rj.r.appspot.com/movies/genere/"+genero)
