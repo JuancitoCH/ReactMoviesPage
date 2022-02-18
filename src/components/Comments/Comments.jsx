@@ -25,12 +25,12 @@ export default function Comments({idMovie,Comentarios}) {
             className="comments_divComments_input"
             placeholder="Deja un comentario"
           ></input>
-          <select name="selectComentario" ref={selectComentario}>
-            <option value="1">🔅</option>
-            <option value="2">🔅🔅</option>
-            <option value="3">🔅🔅🔅</option>
-            <option value="4">🔅🔅🔅🔅</option>
-            <option value="5">🔅🔅🔅🔅🔅</option>
+          <select className='comments-select' name="selectComentario" ref={selectComentario}>
+            <option className='comments-select-option' value="1">🔅</option>
+            <option className='comments-select-option' value="2">🔅🔅</option>
+            <option className='comments-select-option' value="3">🔅🔅🔅</option>
+            <option className='comments-select-option' value="4">🔅🔅🔅🔅</option>
+            <option className='comments-select-option' value="5">🔅🔅🔅🔅🔅</option>
           </select>
         </div>
         <div className="comments_espacioBlanco"></div>

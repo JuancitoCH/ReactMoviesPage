@@ -28,7 +28,7 @@ export default function Detalles({ movie, raiting }) {
             case 5:
                 return `🔅🔅🔅🔅🔅(${promediofloat})`;
             default:
-                return `🔅🔅🔅🔅🔅(${promediofloat})`;
+                return `🔅(0)`;
         }
     }
     return (
