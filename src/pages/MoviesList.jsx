@@ -13,7 +13,7 @@ export default function MoviesList() {
         .then(data=>data.json())
         .then(movies=>setMoviesGenere(movies))
     }
-    console.log(window.location.pathname);
+    // console.log(window.location.pathname);
   return (
     <div className="MovieList">
       <Header />
