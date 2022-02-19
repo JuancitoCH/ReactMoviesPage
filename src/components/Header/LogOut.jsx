@@ -3,8 +3,8 @@ import '../../css/logout.css';
 
 export default function LogOut () {
     
-    function cerrarSesion(){
-    
+    function cerrarSesion(e){
+        e.preventDefault()
         fetch("https://moiviesapi.rj.r.appspot.com/user/login",{
                 method:"POST",
                 credentials:'include',
