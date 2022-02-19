@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../css/detalles.css'
 export default function Detalles({ movie, raiting }) {
-/*   let moviecopy = [...movie.Release];
-  console.log(moviecopy.slice(0,4)); 
-  Añadir bien esta funcionalidad
-  */
+/*   useEffect(()=>{
+    year.substr(0,4);
+    },[movie.Realease])
+  const ArrayRelease = "Hola-Soy-Un-Array".split("-"); */
   function Raiting() {
     let promedio = 0;
     raiting.map((objt) => (promedio += objt.Raiting));
@@ -26,7 +26,7 @@ export default function Detalles({ movie, raiting }) {
         return `🔅(0)`;
     }
   }
-  //Implementar => Mandar el promedi obtenido y cambiarlo el de la api.
+  
   return (
     <div className="principal">
       <div className="contenedor">
@@ -36,7 +36,7 @@ export default function Detalles({ movie, raiting }) {
           <img className="imagen__img" alt={movie.Title} src={movie.Poster} />
         </div>
         <header className="titulo">
-          <h2 className="titulo__nombre">{movie.Title + " (" + 2021 + ")"}</h2>
+          <h2 className="titulo__nombre">{movie.Title + ` ( 2021 )`}</h2>
         </header>
         <div className="ranking">
           <span className="detalles__estrellitas">{Raiting()}</span>
