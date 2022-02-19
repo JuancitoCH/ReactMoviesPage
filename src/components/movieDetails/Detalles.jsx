@@ -5,10 +5,12 @@ export default function Detalles({ movie, raiting }) {
   console.log(moviecopy.slice(0,4)); 
   Añadir bien esta funcionalidad
   */
+
+
   function Raiting() {
     let promedio = 0;
     raiting.map((objt) => (promedio += objt.Raiting));
-    //console.log(promedio)
+    
     const promediofloat = promedio / raiting.length; //Saco promedio Decimal
     promedio = Math.floor(promedio / raiting.length); //Saco promedio Entero
     switch (promedio) {
@@ -45,8 +47,9 @@ export default function Detalles({ movie, raiting }) {
           <p className="descripcion__p">{movie.Sinopsis}</p>
         </div>
         <div className="participantes">
-          <p className="participantes__p">Género: {movie.Genere}</p>
-          <p className="participantes__p">Actores: {movie.Cast}</p>
+          {console.log(movie.Genere)}
+          <p className="participantes__p">Género: {movie.Genere ? movie.Genere.map(gener=>gener+", "):"movie.Genere"}</p>
+          <p className="participantes__p">Actores: {movie.Cast ? movie.Cast.map(gener=>gener+", "):"movie.Genere"}</p>
         </div>
       </div>
       {/*Este div de abajo sirve para separar los detalles del trailer*/}
