@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../css/detalles.css'
 export default function Detalles({ movie, raiting }) {
-  function sacarAño(dato) {
-    let año = "";
-    año = dato;
-    return año.substring(0, 4);
-  }
-  // console.log(movie)
+/*   let moviecopy = [...movie.Release];
+  console.log(moviecopy.slice(0,4)); 
+  Añadir bien esta funcionalidad
+  */
   function Raiting() {
     let promedio = 0;
     raiting.map((objt) => (promedio += objt.Raiting));

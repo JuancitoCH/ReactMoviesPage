@@ -15,20 +15,41 @@ export default function MoviesList() {
     }
     console.log(window.location.pathname);
   return (
-    <div>
+    <div className="MovieList">
       <Header />
       <div className="Home_EspacioBlanco_Header_Slide"></div>
-      <div className='listaGeneros MarginTop'>
-            <h1>Generos</h1>
-        {listaGeneros.map(gen=>{
-            return <button className='cadaGenero' value={gen} key={uniqid()} onClick={()=>{moviesFilter(gen)}}>{gen}</button>
-        })}
-        </div>
-      <section className={moviesGenere?"listaPeliculas MarginTop MarginLeft":"MarginTop MarginLeft"}>
-        {moviesGenere ? 
-        moviesGenere.map(mov=><CardMovie key={uniqid()} movie={mov}/>)
-        :<Movies />}
-      </section>
+      <main className="MovieList-Main">
+        <aside className="MovieList-Aside">
+          <h2 className="MoviesList-Aside-Title">Generos</h2>
+          {listaGeneros.map((gen) => {
+            return (
+              <button
+                className="MovieList-Aside-Genero"
+                value={gen}
+                key={uniqid()}
+                onClick={() => {
+                  moviesFilter(gen);
+                }}
+              >
+                {gen}
+              </button>
+            );
+          })}
+        </aside>
+        <section
+          className={
+            moviesGenere ? "MovieList-Section MarginTop " : "MarginTop "
+          }
+        >
+          {moviesGenere ? (<div className='movies margin'>{
+            moviesGenere.map((mov) => (
+              <CardMovie key={uniqid()} movie={mov} />
+            ))}</div>
+          ) : (
+            <Movies />
+          )}
+        </section>
+      </main>
       {/* Listado de Peliculas */}
       {/* Quizas algun filtro */}
     </div>
