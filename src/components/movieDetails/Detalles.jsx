@@ -28,7 +28,7 @@ export default function Detalles({ movie, raiting }) {
         return `🔅(0)`;
     }
   }
-  //Implementar => Mandar el promedi obtenido y cambiarlo el de la api.
+  
   return (
     <div className="principal">
       <div className="contenedor">
@@ -38,7 +38,7 @@ export default function Detalles({ movie, raiting }) {
           <img className="imagen__img" alt={movie.Title} src={movie.Poster} />
         </div>
         <header className="titulo">
-          <h2 className="titulo__nombre">{movie.Title + " (" + 2021 + ")"}</h2>
+          <h2 className="titulo__nombre">{movie.Title + ` ( 2021 )`}</h2>
         </header>
         <div className="ranking">
           <span className="detalles__estrellitas">{Raiting()}</span>
