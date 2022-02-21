@@ -12,9 +12,9 @@ export default function Header() {
   
   const barra = useRef()
   const {moviesState:{movies}} = useContext(moviesContext)
-  console.log(movies)
+  // console.log(movies)
   const buscar=()=>{
-    console.log(barra.current.value)
+    // console.log(barra.current.value)
     movies.forEach(movie => {
       let titulo = movie.Title.toLowerCase()
       let input = barra.current.value.toLowerCase()
